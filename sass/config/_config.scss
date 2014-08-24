@@ -15,53 +15,52 @@
 // ==========================================================================
 
 // black
-$color-black:   			#000000;
-$color-white:   			#FFFFFF;
+$color-black: black;
+$color-white: white;
 
 // grey
-$color-grey:    			#BCBCBC;
-$color-grey--light: 		#E9E9E9;
-$color-grey--dark: 			#413D3D;
+$color-grey: #bcbcbc;
+$color-grey--light: #e9e9e9;
+$color-grey--dark: #413d3d;
 
 // blue
-$color-blue:    			#3498DB;
-$color-blue--light: 		#19B5FE;
-$color-blue--dark: 			#2C3E50;
+$color-blue: #3498db;
+$color-blue--light: #19b5fe;
+$color-blue--dark: #2c3e50;
 
 // green
-$color-green:    			#26C281;
-$color-green--light: 		#1BA39C;
-$color-green--dark: 		#019875;
+$color-green: #26c281;
+$color-green--light: #1ba39c;
+$color-green--dark: #019875;
 
 // red
-$color-red:    				#FF0000;
-$color-red--light: 			#D64541;
-$color-red--dark: 			#D91E18;
-
+$color-red: red;
+$color-red--light: #d64541;
+$color-red--dark: #d91e18;
 
 // orange
-$color-orange:    			#F89406;
-$color-orange--light:		#EB974E;
-$color-orange--dark: 		#D35400;
+$color-orange: #f89406;
+$color-orange--light: #eb974e;
+$color-orange--dark: #d35400;
 
 // yellow
-$color-yellow:    			#F4D03F;
-$color-yellow--light: 		#F5D76E;
-$color-yellow--dark: 		#EB974E;
+$color-yellow: #f4d03f;
+$color-yellow--light: #f5d76e;
+$color-yellow--dark: #eb974e;
 
 // yellow
-$color-purple:    			#663399;
-$color-purple--light: 		#F5D76E;
-$color-purple--dark: 		#9B59B6;
+$color-purple: #663399;
+$color-purple--light: #f5d76e;
+$color-purple--dark: #9b59b6;
 
 // alerts, messages etc.
-$color-success:   			#2ECC71;
-$color-info:   				#3498DB;
-$color-error:   			#CF000F;
-$color-warning:   			#F4D03F;
+$color-success: #2ecc71;
+$color-info: #3498db;
+$color-error: #cf000f;
+$color-warning: #f4d03f;
 
-// customize
-$color-accent:   			$color-blue; // configure to your brand colors
+// brand color
+$color-accent: $color-blue;
 
 
 // ==========================================================================
@@ -69,34 +68,33 @@ $color-accent:   			$color-blue; // configure to your brand colors
 // ==========================================================================
 
 // base
-$base-font-size:			14px;
-$base-line-height:          1.6em;
-$base-font-family:          'Montserrat', sans-serif;
+$base-font-size: 14px;
+$base-line-height: 1.6em;
+$base-font-family: "Montserrat", sans-serif;
 
 // headers
-$h1-color: 					$color-black;
-$h2-color: 					$color-black;
-$h3-color: 					$color-black;
-$h4-color: 					$color-grey;
-$h5-color: 					$color-grey;
-$h6-color: 					$color-grey;
+$h1-color: $color-black;
+$h2-color: $color-black;
+$h3-color: $color-black;
+$h4-color: $color-grey;
+$h5-color: $color-grey;
+$h6-color: $color-grey;
 
-$h1-font-size: 				2.4em;
-$h2-font-size: 				2.0em;
-$h3-font-size: 				1.4em;
-$h4-font-size: 				1.2em;
-$h5-font-size: 				1.0em;
-$h6-font-size: 				0.8em;
+$h1-font-size: 2.4em;
+$h2-font-size: 2em;
+$h3-font-size: 1.4em;
+$h4-font-size: 1.2em;
+$h5-font-size: 1em;
+$h6-font-size: 0.8em;
 
 // paragraphs
-$p-color:   				$color-grey;
-$p-font-size:				$base-font-size;
-
+$p-color: $color-grey;
+$p-font-size: $base-font-size;
 
 // ==========================================================================
 // @ GRID
 // ==========================================================================
 
-$grid-width:   				1200px;
-$grid-columns: 				12;
-$grid-spacing:   			20px;
+$grid-width: 1200px;
+$grid-columns: 12;
+$grid-spacing: 20px;
