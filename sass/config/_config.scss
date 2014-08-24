@@ -11,68 +11,72 @@
  */
 
 // ==========================================================================
-// @ COLORS
+// @ Colors
 // ==========================================================================
 
-// black
+// Black
 $color-black: black;
 $color-white: white;
 
-// grey
+// Grey
 $color-grey: #bcbcbc;
 $color-grey--light: #e9e9e9;
 $color-grey--dark: #413d3d;
 
-// blue
+// Blue
 $color-blue: #3498db;
 $color-blue--light: #19b5fe;
 $color-blue--dark: #2c3e50;
 
-// green
+// Green
 $color-green: #26c281;
 $color-green--light: #1ba39c;
 $color-green--dark: #019875;
 
-// red
+// Red
 $color-red: red;
 $color-red--light: #d64541;
 $color-red--dark: #d91e18;
 
-// orange
+// Orange
 $color-orange: #f89406;
 $color-orange--light: #eb974e;
 $color-orange--dark: #d35400;
 
-// yellow
+// Yellow
 $color-yellow: #f4d03f;
 $color-yellow--light: #f5d76e;
 $color-yellow--dark: #eb974e;
 
-// yellow
+// Purple
 $color-purple: #663399;
 $color-purple--light: #f5d76e;
 $color-purple--dark: #9b59b6;
 
-// alerts, messages etc.
+// Alerts, Messages etc.
 $color-success: #2ecc71;
 $color-info: #3498db;
 $color-error: #cf000f;
 $color-warning: #f4d03f;
 
-// brand color
+// Brand Color
 $color-accent: $color-blue;
 
 
 // ==========================================================================
-// @ TYPOGRAPHY
+// @ Typography
 // ==========================================================================
 
-// base
+// Base
 $base-font-size: 14px;
 $base-line-height: 1.6em;
 $base-font-family: "Montserrat", sans-serif;
 
-// headers
+// Links
+$generic-link-color: $color-black;
+$generic-link-color-hover: $color-accent;
+
+// Headers
 $h1-color: $color-black;
 $h2-color: $color-black;
 $h3-color: $color-black;
@@ -87,14 +91,99 @@ $h4-font-size: 1.2em;
 $h5-font-size: 1em;
 $h6-font-size: 0.8em;
 
-// paragraphs
-$p-color: $color-grey;
-$p-font-size: $base-font-size;
+// Paragraphs
+$text-color: $color-grey;
+$text-font-size: $base-font-size;
 
 // ==========================================================================
-// @ GRID
+// @ Grid
 // ==========================================================================
 
 $grid-width: 1200px;
 $grid-columns: 12;
-$grid-spacing: 20px;
+$grid-gutter: 20px;
+
+
+// ==========================================================================
+// @ Form Elements
+// ==========================================================================
+
+// Inputs
+$input-bg: $color-white;
+$input-border: $color-grey;
+$input-placeholder-text: $color-grey--dark;
+$input-text-color: $color-black;
+$input-font-family: $base-font-family;
+
+// Textarea
+$textarea-bg: $color-white;
+$textarea-border: $color-grey;
+$textarea-placeholder-text: $color-grey--dark;
+$textarea-text-color: $color-black;
+$textarea-font-family: $base-font-family;
+
+// Dropdowns
+$dropdown-bg: $color-white;
+$dropdown-border: $color-grey;
+$dropdown-placeholder-text: $color-grey--dark;
+$dropdown-text-color: $color-black;
+$dropdown-font-family: $base-font-family;
+
+
+// ==========================================================================
+// @ Buttons
+// ==========================================================================
+
+// Generic Button (Grey)
+$btn-default-background: $color-grey;
+$btn-default-color: $color-white;
+$btn-default-text: $base-font-family;
+$btn-default-border: none;
+
+// Black Button
+$btn-black-background: $color-black;
+$btn-black-color: $color-white;
+
+// White Button
+$btn-white-background: $color-white;
+$btn-white-color: $color-black;
+
+// Blue Button
+$btn-blue-background: $color-blue;
+$btn-blue-color: $color-white;
+
+// Green Button
+$btn-green-background: $color-green;
+$btn-green-color: $color-white;
+
+// Red Button
+$btn-red-background: $color-red;
+$btn-red-color: $color-white;
+
+// Orange Button
+$btn-orange-background: $color-orange;
+$btn-orange-color: $color-white;
+
+// Yellow Button
+$btn-yellow-background: $color-yellow;
+$btn-yellow-color: $color-white;
+
+// Purple Button
+$btn-purple-background: $color-purple;
+$btn-purple-color: $color-white;
+
+// Success Button
+$btn-success-background: $color-success;
+$btn-success-color: $color-white;
+
+// Info Button
+$btn-info-background: $color-info;
+$btn-info-color: $color-white;
+
+// Error Button
+$btn-error-background: $color-error;
+$btn-error-color: $color-white;
+
+// Warning Button
+$btn-warning-background: $color-warning;
+$btn-warning-color: $color-white;
