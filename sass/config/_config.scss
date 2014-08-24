@@ -1,0 +1,102 @@
+/*
+ * 
+ * Paris v0.1
+ * Created by Joe Richardson
+ *
+ * Licensed under MIT
+ * -------------------
+ * Configuration
+ * -------------------
+ * 
+ */
+
+// ==========================================================================
+// @ COLORS
+// ==========================================================================
+
+// black
+$color-black:   			#000000;
+$color-white:   			#FFFFFF;
+
+// grey
+$color-grey:    			#BCBCBC;
+$color-grey--light: 		#E9E9E9;
+$color-grey--dark: 			#413D3D;
+
+// blue
+$color-blue:    			#3498DB;
+$color-blue--light: 		#19B5FE;
+$color-blue--dark: 			#2C3E50;
+
+// green
+$color-green:    			#26C281;
+$color-green--light: 		#1BA39C;
+$color-green--dark: 		#019875;
+
+// red
+$color-red:    				#FF0000;
+$color-red--light: 			#D64541;
+$color-red--dark: 			#D91E18;
+
+
+// orange
+$color-orange:    			#F89406;
+$color-orange--light:		#EB974E;
+$color-orange--dark: 		#D35400;
+
+// yellow
+$color-yellow:    			#F4D03F;
+$color-yellow--light: 		#F5D76E;
+$color-yellow--dark: 		#EB974E;
+
+// yellow
+$color-purple:    			#663399;
+$color-purple--light: 		#F5D76E;
+$color-purple--dark: 		#9B59B6;
+
+// alerts, messages etc.
+$color-success:   			#2ECC71;
+$color-info:   				#3498DB;
+$color-error:   			#CF000F;
+$color-warning:   			#F4D03F;
+
+// customize
+$color-accent:   			$color-blue; // configure to your brand colors
+
+
+// ==========================================================================
+// @ TYPOGRAPHY
+// ==========================================================================
+
+// base
+$base-font-size:			14px;
+$base-line-height:          1.6em;
+$base-font-family:          'Montserrat', sans-serif;
+
+// headers
+$h1-color: 					$color-black;
+$h2-color: 					$color-black;
+$h3-color: 					$color-black;
+$h4-color: 					$color-grey;
+$h5-color: 					$color-grey;
+$h6-color: 					$color-grey;
+
+$h1-font-size: 				2.4em;
+$h2-font-size: 				2.0em;
+$h3-font-size: 				1.4em;
+$h4-font-size: 				1.2em;
+$h5-font-size: 				1.0em;
+$h6-font-size: 				0.8em;
+
+// paragraphs
+$p-color:   				$color-grey;
+$p-font-size:				$base-font-size;
+
+
+// ==========================================================================
+// @ GRID
+// ==========================================================================
+
+$grid-width:   				1200px;
+$grid-columns: 				12;
+$grid-spacing:   			20px;
