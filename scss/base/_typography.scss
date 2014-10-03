@@ -1,0 +1,70 @@
+/*
+* 
+* Paris v0.1
+* Created by Joe Richardson
+*
+* Licensed under MIT
+* -------------------
+* Generic Typography
+* -------------------
+* 
+*/
+
+h1 {
+    font-size: $h1-font-size;
+    font-family: $base-font-family;
+    font-weight: $h1-font-weight;
+    color: $h1-color;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: $h2-font-size;
+    font-family: $base-font-family;
+    font-weight: $h2-font-weight;
+    color: $h2-color;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-size: $h3-font-size;
+    font-family: $base-font-family;
+    font-weight: $h3-font-weight;
+    color: $h3-color;
+    margin-bottom: 0;
+}
+
+h4 {
+    font-size: $h4-font-size;
+    font-family: $base-font-family;
+    font-weight: $h4-font-weight;
+    color: $h4-color;
+    margin-bottom: 0;
+}
+
+h5 {
+    font-size: $h5-font-size;
+    font-family: $base-font-family;
+    font-weight: $h5-font-weight;
+    color: $h5-color;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+h6 {
+    font-size: $h6-font-size;
+    font-family: $base-font-family;
+    font-weight: $h6-font-weight;
+    color: $h6-color;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+p {
+    color: $text-color;
+    font-family: $base-font-family;
+    line-height: $base-line-height;
+    font-size: $base-font-size;
+    font-weight: $base-font-weight;
+    margin-bottom: $text-spacing;
+}

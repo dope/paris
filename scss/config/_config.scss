@@ -19,7 +19,7 @@ $color-black: black;
 $color-white: white;
 
 // Grey
-$color-grey: #bcbcbc;
+$color-grey: #888888;
 $color-grey--light: #e9e9e9;
 $color-grey--dark: #413d3d;
 
@@ -69,8 +69,9 @@ $color-accent: $color-blue;
 
 // Base
 $base-font-size: 14px;
-$base-line-height: 1.6em;
-$base-font-family: "Montserrat", sans-serif;
+$base-line-height: 1.8;
+$base-font-weight: 400;
+$base-font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
 
 // Links
 $generic-link-color: $color-black;
@@ -80,9 +81,9 @@ $generic-link-color-hover: $color-accent;
 $h1-color: $color-black;
 $h2-color: $color-black;
 $h3-color: $color-black;
-$h4-color: $color-grey;
-$h5-color: $color-grey;
-$h6-color: $color-grey;
+$h4-color: lighten($color-black, 40%);
+$h5-color: lighten($color-black, 30%);
+$h6-color: lighten($color-black, 70%);
 
 $h1-font-size: 2.4em;
 $h2-font-size: 2em;
@@ -91,9 +92,17 @@ $h4-font-size: 1.2em;
 $h5-font-size: 1em;
 $h6-font-size: 0.8em;
 
+$h1-font-weight: 200;
+$h2-font-weight: 400;
+$h3-font-weight: 600;
+$h4-font-weight: 600;
+$h5-font-weight: 600;
+$h6-font-weight: 600;
+
 // Paragraphs
 $text-color: $color-grey;
 $text-font-size: $base-font-size;
+$text-spacing: 2em;
 
 // ==========================================================================
 // @ Grid
