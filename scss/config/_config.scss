@@ -69,9 +69,10 @@ $color-accent: $color-blue;
 
 // Base
 $base-font-size: 14px;
-$base-line-height: 1.8;
-$base-font-weight: 400;
+$base-line-height: 1.6;
+$base-font-weight: 300;
 $base-font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+$base-spacing-unit: 25px;
 
 // Links
 $generic-link-color: $color-black;
@@ -81,23 +82,23 @@ $generic-link-color-hover: $color-accent;
 $h1-color: $color-black;
 $h2-color: $color-black;
 $h3-color: $color-black;
-$h4-color: lighten($color-black, 40%);
-$h5-color: lighten($color-black, 30%);
-$h6-color: lighten($color-black, 70%);
+$h4-color: $color-black;
+$h5-color: $color-black;
+$h6-color: $color-black;
 
-$h1-font-size: 2.4em;
+$h1-font-size: 2.6em;
 $h2-font-size: 2em;
-$h3-font-size: 1.4em;
-$h4-font-size: 1.2em;
+$h3-font-size: 1.7em;
+$h4-font-size: 1.4em;
 $h5-font-size: 1em;
-$h6-font-size: 0.8em;
+$h6-font-size: 0.9em;
 
 $h1-font-weight: 200;
-$h2-font-weight: 400;
-$h3-font-weight: 600;
-$h4-font-weight: 600;
-$h5-font-weight: 600;
-$h6-font-weight: 600;
+$h2-font-weight: 200;
+$h3-font-weight: 300;
+$h4-font-weight: 300;
+$h5-font-weight: 400;
+$h6-font-weight: 400;
 
 // Paragraphs
 $text-color: $color-grey;

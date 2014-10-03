@@ -14,8 +14,9 @@ h1 {
     font-size: $h1-font-size;
     font-family: $base-font-family;
     font-weight: $h1-font-weight;
+    line-height: 1.4;
     color: $h1-color;
-    margin-bottom: 0;
+    margin-bottom: $base-spacing-unit / 6;
 }
 
 h2 {
@@ -23,7 +24,7 @@ h2 {
     font-family: $base-font-family;
     font-weight: $h2-font-weight;
     color: $h2-color;
-    margin-bottom: 0;
+    margin-bottom: $base-spacing-unit / 3;
 }
 
 h3 {
@@ -31,7 +32,7 @@ h3 {
     font-family: $base-font-family;
     font-weight: $h3-font-weight;
     color: $h3-color;
-    margin-bottom: 0;
+    margin-bottom: $base-spacing-unit / 9;
 }
 
 h4 {
@@ -39,7 +40,7 @@ h4 {
     font-family: $base-font-family;
     font-weight: $h4-font-weight;
     color: $h4-color;
-    margin-bottom: 0;
+    margin-bottom: $base-spacing-unit / 10;
 }
 
 h5 {
@@ -47,7 +48,7 @@ h5 {
     font-family: $base-font-family;
     font-weight: $h5-font-weight;
     color: $h5-color;
-    margin-bottom: 0;
+    margin-bottom: $base-spacing-unit / 11;
     text-transform: uppercase;
 }
 
@@ -56,7 +57,7 @@ h6 {
     font-family: $base-font-family;
     font-weight: $h6-font-weight;
     color: $h6-color;
-    margin-bottom: 0;
+    margin-bottom: $base-spacing-unit / 12;
     text-transform: uppercase;
 }
 
