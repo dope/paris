@@ -1,0 +1,32 @@
+/*
+* 
+* Paris v0.1
+* Created by Joe Richardson
+*
+* Licensed under MIT
+* -------------------
+* Horizontal Rule
+* -------------------
+* 
+*/
+
+hr,
+.hr {
+    height: 1px;
+    background: lighten($color-black, 90%);
+    border: 0;
+    margin: $base-spacing-unit 0;
+
+    &--thick {
+        height: 5px;
+    }
+
+    &--dark {
+        background: lighten($color-black, 80%);
+        height: 2px;
+    }
+
+    &--brand {
+        background: $color-accent;
+    }
+}

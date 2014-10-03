@@ -1,0 +1,27 @@
+/*
+* 
+* Paris v0.1
+* Created by Joe Richardson
+*
+* Licensed under MIT
+* -------------------
+* Images
+* -------------------
+* 
+*/
+*
+img,
+.img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    
+    &--rounded {
+        width: 100%;
+    }
+
+    &--cornered {
+        width: 10px;
+    }
+
+}

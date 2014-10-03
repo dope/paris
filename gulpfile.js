@@ -4,7 +4,7 @@ var sass         = require('gulp-sass');
 var browserSync  = require('browser-sync');
 var prefix       = require('gulp-autoprefixer');
 
-// create sass task
+// create sass tasks
 gulp.task('sass', function () {
     gulp.src('scss/**/*.scss')
         .pipe(sass({outputStyle: 'compressed', includePaths: ['scss']}))
