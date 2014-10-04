@@ -1,0 +1,8 @@
+{
+    "name": "paris",
+    "version": "0.1",
+    "author": "Joe Richardson",
+    "ignore": [
+        "bower.json"
+    ]
+}
