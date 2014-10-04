@@ -1,0 +1,82 @@
+// Usage: <form class="form"></form>
+.form {
+    // Usage: <input type="text" class="form__input">
+    &__input {
+        display: block;
+        background: $input-bg;
+        font-family: $input-font-family;
+        font-size: $input-font-size;
+        color: $input-text-color;
+        border-width: 1px;
+        border-style: solid;
+        border-color: $input-border;
+        padding: 0.9em;
+        font-weight: 100;
+        
+        @include placeholder {
+            color: $color-black;
+        }
+    }
+    
+    // Usage: <textarea class="form__textarea"></textarea>
+    &__textarea {
+        display: block;
+        background: $textarea-bg;
+        color: $textarea-text-color;
+        border-color: $textarea-border;
+        font-family: $textarea-font-family;
+        font-size: $textarea-font-size;
+        color: $textarea-text-color;
+        border-width: 1px;
+        border-style: solid;
+        resize: vertical;
+        min-height: 8em;
+        padding: 0.9em;
+        font-weight: 100;
+
+        @include placeholder {
+            color: $color-black;
+        }
+    }
+    
+    // Usage: <label class="form__label"></label>
+    &__label {
+        display: block;
+        margin-top: $base-spacing-unit / 2.5;
+        font-size: $label-font-size;
+    }
+}
+
+// Usage: <select class="select"><option>Hello</option></select>
+.select {
+    position: relative;
+    background: $dropdown-bg;
+    border-color: $dropdown-border;
+    padding: 1em;
+    min-width: 15em;
+    font-family: $dropdown-font-family;
+    font-size: $dropdown-font-size;
+    font-weight: 100;
+
+    &:after {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        margin: auto;
+        border-top: 5px solid $color-black;
+        content: "hello world";
+        z-index: 5;
+    }
+}
+
+
+
+
+
+
+
+
+

@@ -26,3 +26,12 @@ body {
     font-weight: $base-font-weight;
     line-height: $base-line-height;
 }
+
+input,
+textarea,
+button,
+select {
+    -webkit-appearance: none;
+    outline: none;
+    @include border-radius(0px);
+}

@@ -1,4 +1,4 @@
-/*
+ /*
  * 
  * Paris v0.1
  * Created by Joe Richardson
@@ -15,6 +15,11 @@
 
 /* Mixins */
 @import 'mixins/media-queries';
+@import 'mixins/transition';
+@import 'mixins/opacity';
+@import 'mixins/border-radius';
+@import 'mixins/animation';
+@import 'mixins/placeholder';
 
 /* Base */
 @import 'base/forms';
@@ -30,5 +35,4 @@
 
 /* Misc */
 @import 'misc/helpers';
-@import 'misc/animations';
 @import 'misc/colors';

@@ -74,7 +74,6 @@ $base-font-size: 16px;
 $base-line-height: 1.8;
 $base-font-weight: 300;
 $base-font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
-$base-spacing-unit: 25px;
 
 // Links
 $generic-link-color: $color-black;
@@ -114,7 +113,7 @@ $text-spacing: 2em;
 $grid-width: 1200px;
 $grid-columns: 12;
 $grid-gutter: 20px;
-
+$base-spacing-unit: 34px;
 
 // ==========================================================================
 // @ Media Queries
@@ -143,24 +142,30 @@ $border-radius-full: 100%;
 
 // Inputs
 $input-bg: $color-white;
-$input-border: $color-grey;
+$input-border: $color-grey--light;
 $input-placeholder-text: $color-grey--dark;
 $input-text-color: $color-black;
 $input-font-family: $base-font-family;
+$input-font-size: .8em;
 
 // Textarea
 $textarea-bg: $color-white;
-$textarea-border: $color-grey;
+$textarea-border: $color-grey--light;
 $textarea-placeholder-text: $color-grey--dark;
 $textarea-text-color: $color-black;
 $textarea-font-family: $base-font-family;
+$textarea-font-size: .8em;
 
 // Dropdowns
 $dropdown-bg: $color-white;
-$dropdown-border: $color-grey;
+$dropdown-border: $color-grey--light;
 $dropdown-placeholder-text: $color-grey--dark;
 $dropdown-text-color: $color-black;
 $dropdown-font-family: $base-font-family;
+$dropdown-font-size: .8em;
+
+// Labels
+$label-font-size: 11px;
 
 
 // ==========================================================================
@@ -252,9 +257,9 @@ $img-cornered: $border-radius-md;
 // ==========================================================================
 
 // Colors
-$well-light: $color-grey--light;
-$well-dark: $color-black;
-$well-brand: $color-accent;
+$well-default-color: $color-grey--light;
+$well-light-color: $color-white;
+$well-dark-color: $color-grey--dark;
 
 // Styles
 $well-default-padding: 25px;
