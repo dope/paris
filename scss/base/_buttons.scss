@@ -1,0 +1,188 @@
+/*
+* 
+* Paris v0.1
+* Created by Joe Richardson
+*
+* Licensed under MIT
+* -------------------
+* Buttons
+* -------------------
+* 
+*/
+
+.btn {
+    // Usage: <button class="btn">Hello World</button>
+    background: $btn-default-background;
+    color: $btn-default-color;
+    font-family: $btn-default-text;
+    font-size: $btn-default-font-size;
+    font-weight: $btn-default-font-weight;
+    border: $btn-default-border;
+    padding: $btn-default-padding;
+    cursor: pointer;
+    @include transition(all .3s ease-in);
+
+    &:hover {
+        background: darken($btn-default-background, 10%);
+    }
+    
+    // Usage: <button class="btn btn--black">Hello World</button>
+    &--black {
+        background: $btn-black-background;
+        color: $btn-black-color;
+
+        &:hover {
+            background: lighten($btn-black-background, 15%);
+        }
+    }
+
+    // Usage: <button class="btn btn--white">Hello World</button>
+    &--white {
+        background: $btn-white-background;
+        color: $btn-white-color;
+
+        &:hover {
+            background: darken($btn-white-background, 10%);
+        }
+    }
+
+    // Usage: <button class="btn btn--blue">Hello World</button>
+    &--blue {
+        background: $btn-blue-background;
+        color: $btn-blue-color;
+
+        &:hover {
+            background: darken($btn-blue-background, 10%);
+        }
+    }
+
+    // Usage: <button class="btn btn--green">Hello World</button>
+    &--green {
+        background: $btn-green-background;
+        color: $btn-green-color;
+
+        &:hover {
+            background: darken($btn-green-background, 10%);
+        }
+    }
+
+    // Usage: <button class="btn btn--red">Hello World</button>
+    &--red {
+        background: $btn-red-background;
+        color: $btn-red-color;
+
+        &:hover {
+            background: darken($btn-red-background, 10%);
+        }
+    }
+
+    // Usage: <button class="btn btn--red">Hello World</button>
+    &--orange {
+        background: $btn-orange-background;
+        color: $btn-orange-color;
+
+        &:hover {
+            background: darken($btn-orange-background, 10%);
+        }
+    }
+
+    // Usage: <button class="btn btn--yellow">Hello World</button>
+    &--yellow {
+        background: $btn-yellow-background;
+        color: $btn-yellow-color;
+
+        &:hover {
+            background: darken($btn-yellow-background, 10%);
+        }
+    }
+
+    // Usage: <button class="btn btn--purple">Hello World</button>
+    &--purple {
+        background: $btn-purple-background;
+        color: $btn-purple-color;
+
+        &:hover {
+            background: darken($btn-purple-background, 10%);
+        }
+    }
+
+    // Usage: <button class="btn btn--success">Hello World</button>
+    &--success {
+        background: $btn-success-background;
+        color: $btn-success-color;
+
+        &:hover {
+            background: darken($btn-success-background, 10%);
+        }
+    }
+
+    // Usage: <button class="btn btn--info">Hello World</button>
+    &--info {
+        background: $btn-info-background;
+        color: $btn-info-color;
+
+        &:hover {
+            background: darken($btn-info-background, 10%);
+        }
+    }
+
+    // Usage: <button class="btn btn--error">Hello World</button>
+    &--error {
+        background: $btn-error-background;
+        color: $btn-error-color;
+
+        &:hover {
+            background: darken($btn-error-background, 10%);
+        }
+    }
+
+    // Usage: <button class="btn btn--warning">Hello World</button>
+    &--warning {
+        background: $btn-warning-background;
+        color: $btn-warning-color;
+
+        &:hover {
+            background: darken($btn-warning-background, 10%);
+        }
+    }
+
+    // Different styles
+    // Usage: <button class="btn btn--rounded">Hi</button>
+    &--rounded {
+        @include border-radius(100px);
+    }
+    
+    // Usage: <button class="btn btn--cornered">Hi</button>
+    &--cornered {
+        @include border-radius(6px);
+    }
+
+    &--scale {
+        &:hover {
+            transform: scale(1.03);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

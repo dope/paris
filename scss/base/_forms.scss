@@ -1,3 +1,15 @@
+/*
+* 
+* Paris v0.1
+* Created by Joe Richardson
+*
+* Licensed under MIT
+* -------------------
+* Forms
+* -------------------
+* 
+*/
+
 // Usage: <form class="form"></form>
 .form {
     // Usage: <input type="text" class="form__input">
@@ -15,6 +27,10 @@
         
         @include placeholder {
             color: $color-black;
+        }
+
+        &:focus {
+            border-color: lighten($color-black, 75%);
         }
     }
     
@@ -37,6 +53,10 @@
         @include placeholder {
             color: $color-black;
         }
+
+        &:focus {
+            border-color: lighten($color-black, 75%);
+        }
     }
     
     // Usage: <label class="form__label"></label>
@@ -47,7 +67,14 @@
     }
 }
 
-// Usage: <select class="select"><option>Hello</option></select>
+// Usage: 
+// <select class="select">
+//      <span class="select__arrow"></span>
+//      <option>Hello</option>
+//      <option>Hello</option>
+//      <option>Hello</option>
+//      <option>Hello</option>
+// </select>
 .select {
     position: relative;
     background: $dropdown-bg;
@@ -58,17 +85,15 @@
     font-size: $dropdown-font-size;
     font-weight: 100;
 
-    &:after {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        width: 0;
-        height: 0;
-        margin: auto;
-        border-top: 5px solid $color-black;
-        content: "hello world";
-        z-index: 5;
+    &__arrow {
+        display: block;
+        width: 5px;
+        height: 5px;
+        background: red;
+    }
+
+    &:focus {
+        border-color: lighten($color-black, 75%);
     }
 }
 
