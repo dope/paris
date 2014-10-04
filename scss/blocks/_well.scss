@@ -1,0 +1,24 @@
+/*
+* 
+* Paris v0.1
+* Created by Joe Richardson
+*
+* Licensed under MIT
+* -------------------
+* Wells
+* -------------------
+* 
+*/
+
+body {
+    background: #fff;
+}
+
+.well {
+    // Usage: <div class="well">Content here</div>
+    background: $well-light;
+    padding: $well-default-padding; 
+    border-radius: $well-cornered;
+    width: 600px;
+    margin: 50px auto;
+}

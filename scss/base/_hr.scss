@@ -11,22 +11,28 @@
 */
 
 hr,
-.hr {
-    height: 1px;
-    background: lighten($color-black, 90%);
+.hr { 
+    // Usage: <hr class="hr">
+    height: $hr-default-height;
+    background: $hr-default-color;
     border: 0;
     margin: $base-spacing-unit 0;
-
+    
+    // Usage: <hr class="hr hr--thick">
     &--thick {
-        height: 5px;
+        height: $hr-thick-height;
+        background: $hr-thick-color;
     }
-
+    
+    // Usage: <hr class="hr hr--dark">
     &--dark {
-        background: lighten($color-black, 80%);
-        height: 2px;
+        background: $hr-dark-color;
+        height: $hr-dark-height;
     }
-
+    
+    // Usage: <hr class="hr hr--brand">
     &--brand {
-        background: $color-accent;
+        background: $hr-brand-color;
+        height: $hr-brand-height;
     }
 }

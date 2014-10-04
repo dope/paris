@@ -127,6 +127,17 @@ $xl: 80em;
 
 
 // ==========================================================================
+// @ Border Radius
+// ==========================================================================
+$border-radius-xs: 3px;
+$border-radius-sm: 6px;
+$border-radius-md: 10px;
+$border-radius-lg: 20px;
+$border-radius-xl: 50px;
+$border-radius-full: 100%;
+
+
+// ==========================================================================
 // @ Form Elements
 // ==========================================================================
 
@@ -209,3 +220,59 @@ $btn-error-color: $color-white;
 // Warning Button
 $btn-warning-background: $color-warning;
 $btn-warning-color: $color-white;
+
+// ==========================================================================
+// @ Horizontal Rules
+// ==========================================================================
+
+// Sizes
+$hr-default-height: 1px;
+$hr-thick-height: 5px;
+$hr-dark-height: 1px;
+$hr-brand-height: 1px;
+
+// Colors
+$hr-default-color: lighten($color-black, 90%);
+$hr-thick-color: lighten($color-black, 90%);
+$hr-dark-color: $color-black;
+$hr-brand-color: $color-accent;
+
+
+// ==========================================================================
+// @ Images
+// ==========================================================================
+
+// Styles
+$img-rounded: $border-radius-full;
+$img-cornered: $border-radius-md;
+
+
+// ==========================================================================
+// @ Wells
+// ==========================================================================
+
+// Colors
+$well-light: $color-grey--light;
+$well-dark: $color-black;
+$well-brand: $color-accent;
+
+// Styles
+$well-default-padding: 25px;
+$well-light-padding: 25px;
+$well-dark-padding: 25px;
+$well-cornered: $border-radius-sm;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
