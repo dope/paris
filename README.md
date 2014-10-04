@@ -1,6 +1,13 @@
 Paris
 ===
+Paris is a CSS framework made to easily style web applications, backend systems and whatever else you may find it useful for. As it stands Paris is a design heavy framework made with Sass and is extremely easy to customize.
 
+
+### Getting Started
+Firstly you're going to want to download Paris — You can achieve this by one of the three options below:
+- `bower install paris`
+- `git clone http://github.com/dope/paris`
+- [Download .zip](#)
 
 ### Support
 - [hello.joer@gmail.com](mailto:hello.joer@gmail.com)
