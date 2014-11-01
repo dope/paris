@@ -1,4 +1,6 @@
-// Usage: @extend %clearfix;
+// Scss Usage: @extend %clearfix;
+// HTML Usage: <div class="clearfix">Hey</div>
+.clearfix,
 %clearfix {
     *zoom: 1;
     &:before, &:after {
