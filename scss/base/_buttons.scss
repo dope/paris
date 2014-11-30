@@ -25,43 +25,32 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     overflow: hidden;
+    @include border-radius(4px);
     @include transition (all .3s linear);
 
-    > * {
-        position: relative;
-        z-index: 100;
-        display: inline-block;
-        vertical-align: middle;
-    }
-
-    &:after {
-        position: absolute;
-        z-index: -99;
-        top: -100%;
-        left: 0;
-        right: 0;
-        margin: auto;
-        content: "";
-        height: 100%;
-        background: rgba($color-black, 0.1);
-        @include transition (top .3s linear);
-    }
+    margin-top: $base-spacing-unit;
 
     &:hover {
         background: darken($btn-default-background, 10%);
+    }
+
+    &:active {
+        background: darken($btn-default-background, 15%);
     }
     
     // Usage: <button class="btn btn--black">Hello World</button>
     &--black {
         background: $btn-black-background;
         color: $btn-black-color;
+        box-shadow: 0px 2px 0px lighten($btn-black-background, 15%);
 
         &:hover {
             background: lighten($btn-black-background, 15%);
+        }
 
-            &:after {
-                top: 0;
-            }
+        &:active {
+            background: darken($btn-black-background, 15%);
+            box-shadow: 0px 2px 0px lighten($btn-black-background, 20%);
         }
     }
 
@@ -69,13 +58,15 @@
     &--white {
         background: $btn-white-background;
         color: $btn-white-color;
+        box-shadow: 0px 2px 0px darken($btn-white-background, 10%);
 
         &:hover {
             background: darken($btn-white-background, 10%);
+        }
 
-            &:after {
-                top: 0;
-            }
+        &:active {
+            background: darken($btn-default-background, 15%);
+            box-shadow: 0px 2px 0px darken($btn-white-background, 20%);
         }
     }
 
@@ -83,13 +74,14 @@
     &--blue {
         background: $btn-blue-background;
         color: $btn-blue-color;
+        box-shadow: 0px 2px 0px $color-blue--dark;
 
         &:hover {
             background: $color-blue--dark;
+        }
 
-            &:after {
-                top: 0;
-            }
+        &:active {
+            background: darken($color-blue--dark, 10%);
         }
     }
 
@@ -97,13 +89,15 @@
     &--green {
         background: $btn-green-background;
         color: $btn-green-color;
+        box-shadow: 0px 2px 0px $color-green--dark;
 
         &:hover {
             background: $color-green--dark;
+        }
 
-            &:after {
-                top: 0;
-            }
+        &:active {
+            background: darken($color-green--dark, 10%);
+            box-shadow: 0px 2px 0px darken($color-green--dark, 10%);
         }
     }
 
@@ -111,13 +105,15 @@
     &--red {
         background: $btn-red-background;
         color: $btn-red-color;
+        box-shadow: 0px 2px 0px $color-red--dark;
 
         &:hover {
             background: $color-red--dark;
+        }
 
-            &:after {
-                top: 0;
-            }
+        &:active {
+            background: darken($color-red--dark, 10%);
+            box-shadow: 0px 2px 0px darken($color-red--dark, 10%);
         }
     }
 
@@ -125,13 +121,15 @@
     &--orange {
         background: $btn-orange-background;
         color: $btn-orange-color;
+        box-shadow: 0px 2px 0px $color-orange--dark;
 
         &:hover {
             background: $color-orange--dark;
+        }
 
-            &:after {
-                top: 0;
-            }
+        &:active {
+            background: darken($color-orange--dark, 10%);
+            box-shadow: 0px 2px 0px darken($color-orange--dark, 10%);
         }
     }
 
@@ -139,13 +137,15 @@
     &--yellow {
         background: $btn-yellow-background;
         color: $btn-yellow-color;
+        box-shadow: 0px 2px 0px $color-yellow--dark;
 
         &:hover {
             background: $color-yellow--dark;
+        }
 
-            &:after {
-                top: 0;
-            }
+        &:active {
+            background: darken($color-yellow--dark, 10%);
+            box-shadow: 0px 2px 0px darken($color-yellow--dark, 10%);
         }
     }
 
@@ -153,13 +153,15 @@
     &--purple {
         background: $btn-purple-background;
         color: $btn-purple-color;
+        box-shadow: 0px 2px 0px $color-purple--dark;
 
         &:hover {
             background: $color-purple--dark;
+        }
 
-            &:after {
-                top: 0;
-            }
+        &:active {
+            background: darken($color-purple--dark, 10%);
+            box-shadow: 0px 2px 0px darken($color-purple--dark, 10%);
         }
     }
 
@@ -167,13 +169,15 @@
     &--success {
         background: $btn-success-background;
         color: $btn-success-color;
+        box-shadow: 0px 2px 0px darken($btn-success-background, 10%);
 
         &:hover {
             background: darken($btn-success-background, 10%);
+        }
 
-            &:after {
-                top: 0;
-            }
+        &:active {
+            background: darken($btn-success-background, 10%);
+            box-shadow: 0px 2px 0px darken($btn-success-background, 10%);
         }
     }
 
@@ -181,13 +185,15 @@
     &--info {
         background: $btn-info-background;
         color: $btn-info-color;
+        box-shadow: 0px 2px 0px darken($btn-info-background, 10%);
 
         &:hover {
             background: darken($btn-info-background, 10%);
+        }
 
-            &:after {
-                top: 0;
-            }
+        &:active {
+            background: darken($btn-info-background, 10%);
+            box-shadow: 0px 2px 0px darken($btn-info-background, 10%);
         }
     }
 
@@ -195,13 +201,15 @@
     &--error {
         background: $btn-error-background;
         color: $btn-error-color;
+        box-shadow: 0px 2px 0px darken($btn-error-background, 10%);
 
         &:hover {
             background: darken($btn-error-background, 10%);
+        }
 
-            &:after {
-                top: 0;
-            }
+        &:active {
+            background: darken($btn-error-background, 10%);
+            box-shadow: 0px 2px 0px darken($btn-error-background, 10%);
         }
     }
 
@@ -209,13 +217,15 @@
     &--warning {
         background: $btn-warning-background;
         color: $btn-warning-color;
+        box-shadow: 0px 2px 0px darken($btn-warning-background, 10%);
 
         &:hover {
             background: darken($btn-warning-background, 10%);
+        }
 
-            &:after {
-                top: 0;
-            }
+        &:active {
+            background: darken($btn-warning-background, 10%);
+            box-shadow: 0px 2px 0px darken($btn-warning-background, 10%);
         }
     }
 
