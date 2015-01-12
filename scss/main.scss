@@ -10,9 +10,6 @@
  * 
  */
 
-/* Config  */
-@import 'config/config';
-
 /* Mixins */
 @import 'mixins/media-queries';
 @import 'mixins/transition';
@@ -20,6 +17,9 @@
 @import 'mixins/border-radius';
 @import 'mixins/animation';
 @import 'mixins/placeholder';
+
+/* Variables  */
+@import 'base/variables';
 
 /* Base */
 @import 'base/styles';
@@ -29,12 +29,10 @@
 @import 'base/typography';
 @import 'base/hr';
 @import 'base/images';
+@import 'base/helpers';
+@import 'base/colors';
 
-/* Blocks */
-@import 'blocks/messages';
-@import 'blocks/grid';
-@import 'blocks/well';
-
-/* Misc */
-@import 'misc/helpers';
-@import 'misc/colors';
+/* Components */
+@import 'components/messages';
+@import 'components/grid';
+@import 'components/well';
