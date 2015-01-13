@@ -14,8 +14,8 @@ Once you have downloaded you're going to want to run a `npm install` to install 
 For the main documentation please visit: [docs.pariscss.com](#)
 
 ### Support
-- [hello.joer@gmail.com](mailto:hello.joer@gmail.com)
 - [@joericho](http://twitter.com/joericho)
+- [@quagliero](http://twitter.com/quagliero)
 - [Open an issue](https://github.com/dope/paris/issues/new)
 
 ### License
@@ -23,7 +23,7 @@ For the main documentation please visit: [docs.pariscss.com](#)
 ```
 The MIT License (MIT)
 
-Copyright (c) 2014 Joe Richardson
+Copyright (c) 2014 Joe Richardson and Tobias Harison-Denby
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
