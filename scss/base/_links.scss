@@ -1,20 +1,20 @@
 /*
-* 
+*
 * Paris v0.1
-* Created by Joe Richardson
+* Created by @joericho and @quagliero
 *
 * Licensed under MIT
 * -------------------
 * Links
 * -------------------
-* 
+*
 */
 
 a,
 .link {
     color: $color-black;
     text-decoration: underline;
-    
+
     &:hover {
         border-bottom: 0px;
         text-decoration: none;

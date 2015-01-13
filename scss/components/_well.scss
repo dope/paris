@@ -1,19 +1,19 @@
 /*
-* 
+*
 * Paris v0.1
-* Created by Joe Richardson
+* Created by @joericho and @quagliero
 *
 * Licensed under MIT
 * -------------------
 * Wells
 * -------------------
-* 
+*
 */
 
 .well {
     // Usage: <div class="well">Content here</div>
     background: $well-default-color;
-    padding: $well-default-padding; 
+    padding: $well-default-padding;
     border-radius: $well-cornered;
     margin: $base-spacing-unit auto;
 

@@ -1,13 +1,13 @@
 /*
-* 
+*
 * Paris v0.1
-* Created by Joe Richardson
+* Created by @joericho and @quagliero
 *
 * Licensed under MIT
 * -------------------
 * Generic Typography
 * -------------------
-* 
+*
 */
 
 h1 {
@@ -21,7 +21,7 @@ h1 {
     @include lg {
         font-size: $h1-font-size / 1.1;
     }
-    
+
     @include md {
         font-size: $h1-font-size / 1.2;
     }
@@ -46,7 +46,7 @@ h2 {
     @include lg {
         font-size: $h1-font-size / 1.4;
     }
-    
+
     @include md {
         font-size: $h1-font-size / 1.5;
     }
@@ -71,7 +71,7 @@ h3 {
     @include lg {
         font-size: $h1-font-size / 1.7;
     }
-    
+
     @include md {
         font-size: $h1-font-size / 1.8;
     }
@@ -96,7 +96,7 @@ h4 {
     @include lg {
         font-size: $h1-font-size / 2;
     }
-    
+
     @include md {
         font-size: $h1-font-size / 2.1;
     }

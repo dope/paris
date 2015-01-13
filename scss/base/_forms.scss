@@ -1,13 +1,13 @@
 /*
-* 
+*
 * Paris v0.1
-* Created by Joe Richardson
+* Created by @joericho and @quagliero
 *
 * Licensed under MIT
 * -------------------
 * Forms
 * -------------------
-* 
+*
 */
 
 // Usage: <form class="form"></form>
@@ -24,7 +24,7 @@
         border-color: $input-border;
         padding: 0.9em;
         font-weight: 100;
-        
+
         @include placeholder {
             color: $color-black;
         }
@@ -33,7 +33,7 @@
             border-color: lighten($color-black, 75%);
         }
     }
-    
+
     // Usage: <textarea class="form__textarea"></textarea>
     &__textarea {
         display: block;
@@ -58,7 +58,7 @@
             border-color: lighten($color-black, 75%);
         }
     }
-    
+
     // Usage: <label class="form__label"></label>
     &__label {
         display: block;
@@ -67,7 +67,7 @@
     }
 }
 
-// Usage: 
+// Usage:
 // <select class="select">
 //      <span class="select__arrow"></span>
 //      <option>Hello</option>
