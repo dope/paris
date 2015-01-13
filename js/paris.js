@@ -84,7 +84,7 @@
     // Expose the `paris` init function to the global namespace
     window.paris = function paris(config) {
 
-        if (typeof config === "object") {
+        if (typeof config === 'object') {
             // update the defaults if necessary
             API.setModules(config);
         }
