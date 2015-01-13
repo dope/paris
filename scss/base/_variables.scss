@@ -1,5 +1,5 @@
 /*
- * 
+ *
  * Paris v0.1
  * Created by Joe Richardson
  *
@@ -7,7 +7,7 @@
  * -------------------
  * Variables
  * -------------------
- * 
+ *
  */
 
 // ==========================================================================
@@ -28,7 +28,7 @@ $color-grey--dark:              #413d3d;
 // Blue
 $color-blue:                    #446CB3;
 $color-blue--light:             #638DD9;
-$color-blue--dark:              #3B5E9C; 
+$color-blue--dark:              #3B5E9C;
 
 // Green
 $color-green:                   #B8C45A;
@@ -114,6 +114,8 @@ $grid-width:                    1200px;
 $grid-columns:                  12;
 $grid-gutter:                   20px;
 $base-spacing-unit:             34px;
+$half-spacing-unit:             34px / 2;
+$quarter-spacing-unit:          34px / 4;
 
 // ==========================================================================
 // @ Media Queries

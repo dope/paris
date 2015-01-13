@@ -1,5 +1,5 @@
 /*
-* 
+*
 * Paris v0.1
 * Created by Joe Richardson
 *
@@ -7,7 +7,7 @@
 * -------------------
 * Buttons
 * -------------------
-* 
+*
 */
 
 .btn {
@@ -28,8 +28,6 @@
     @include border-radius(4px);
     @include transition (all .3s linear);
 
-    margin-top: $base-spacing-unit;
-
     &:hover {
         background: darken($btn-default-background, 10%);
     }
@@ -37,7 +35,7 @@
     &:active {
         background: darken($btn-default-background, 15%);
     }
-    
+
     // Usage: <button class="btn btn--black">Hello World</button>
     &--black {
         background: $btn-black-background;
@@ -234,25 +232,25 @@
     &--rounded {
         @include border-radius(100px);
     }
-    
+
     // Usage: <button class="btn btn--cornered">Hi</button>
     &--cornered {
         @include border-radius(6px);
     }
-    
+
     // Usage: <button class="btn btn--scale">Hi</button>
     &--scale {
         &:hover {
             transform: scale(1.03);
         }
     }
-    
+
     // Usage: <button class="btn btn--block">Hi</button>
     &--block {
         display: block;
         width: 100%;
     }
-    
+
     // Usage: <button class="btn btn--xs">Hi</button>
     &--xs {
         padding: 0.7em 0.6em;
@@ -270,7 +268,7 @@
 
     // Usage: <button class="btn btn--lg">Hi</button>
     &--lg {
-        padding: 1.3em 2.5em; 
+        padding: 1.3em 2.5em;
     }
 
     // Usage: <button class="btn btn--xl">Hi</button>
