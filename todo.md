@@ -26,8 +26,14 @@ Image styles:
 
 Helpers:
 - [x] Color classes
-- [ ] Margin and Padding classes
-- [x] Font size classes
+- [ ] Font size classes
 - [ ] Animations
 - [ ] Transitions
-- [ ] Typography helpers (Floats, text-aligns)
+- [ ] Margin
+- [ ] Padding
+- [ ] Floats
+- [ ] Text aligns
+- [ ] Positions
+- [ ] Displays
+- [ ] Vertical Aligns
+- [ ] Devices show and hide
