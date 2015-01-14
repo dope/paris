@@ -7,10 +7,14 @@
 * @author Tobias Harison-Denby
 */
 
-(function (window, document) {
+(function (window, document, undefined) {
     'use strict';
 
     var API = {};
+
+    API.defaults = {
+        'namespace': 'paris'
+    };
 
     API.modules = {
         'modal': true,
@@ -54,21 +58,78 @@
     API.Modal = (function Modal() {
         var triggers;
         var modals;
+        var overlay;
+        var activeModal;
+        var modalsCreated = {};
+        var selector = API.defaults.namespace + '-modal';
+        var dataSelector = 'data-' + selector;
 
         var init = function () {
-            triggers = document.querySelectorAll('[data-paris-modal-trigger]');
-            modals = document.querySelectorAll('[data-paris-modal]');
+            triggers = document.querySelectorAll('[' + dataSelector + '-trigger]');
+            modals = document.querySelectorAll('[' + dataSelector + ']');
             /* Just incase. Hide all modal content blocks */
             for (var i = modals.length; i--;) {
-                modals[i].style.display = 'none';
-                modals[i].style.visibility = 'hidden';
+                var modal = modals[i];
+                document.body.appendChild(modal);
+                modal.classList.add('modal');
             }
 
             setHandlers(triggers);
         };
 
         var setHandlers = function (triggers) {
+            for (var i = triggers.length; i--;) {
+                var trigger = triggers[i];
+                var modalId = trigger.getAttribute(dataSelector + '-trigger');
 
+                /* Bind the modal triggers to modals with matching value */
+                trigger.addEventListener('click', openModal(modalId));
+            }
+
+            document.addEventListener('keyup', closeModal);
+        };
+
+        var buildModal = function (modalId) {
+            var modal = document.querySelector('[' + dataSelector + '="' + modalId + '"]');
+            var modalInner = '<div class="modal__inner">' + modal.innerHTML + '</div>';
+            modal.innerHTML = modalInner;
+
+            // add it to the existing modals object
+            modalsCreated[modalId] = modal;
+        };
+
+        var buildOverlay = function () {
+            overlay = document.createElement('div');
+            overlay.className = 'overlay';
+            document.body.appendChild(overlay);
+        };
+
+        var openModal = function (modalId) {
+            return function () {
+                if (overlay === undefined) {
+                    buildOverlay();
+                }
+                // check if modal has been built and in DOM already
+                if (!modalsCreated.hasOwnProperty(modalId)) {
+                    buildModal(modalId);
+                }
+
+                // set the active modal
+                activeModal = modalId;
+                // show it
+                setTimeout(function () {
+                    overlay.classList.add('overlay--open');
+                    modalsCreated[modalId].classList.add('modal--open');
+                }, 50);
+            };
+        };
+
+        var closeModal = function (e) {
+            // close on Escape
+            if (e.which === 27) {
+                overlay.classList.remove('overlay--open');
+                modalsCreated[activeModal].classList.remove('modal--open');
+            }
         };
 
         return {

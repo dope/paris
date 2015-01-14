@@ -1,0 +1,46 @@
+/*
+* Modal
+* In your face.
+*/
+
+.modal {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    right: 0;
+    transition: top .33s ease-in-out, transform .33s ease;
+}
+
+.modal__inner {
+    padding: $base-spacing-unit;
+    background: $color-white;
+    margin: 0 auto;
+    width: 100%;
+    max-width: $md;
+}
+
+.modal--open {
+    z-index: 100;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* The modal overlay (usually created dynamically) */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba($color-black, .5);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity .3s ease-in;
+}
+
+.overlay--open {
+    z-index: 99;
+    opacity: 1;
+}
