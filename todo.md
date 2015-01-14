@@ -8,7 +8,7 @@ Forms:
 - [ ] Checkbox
 - [x] Buttons
 - [ ] Grid System
-- [ ] Messages
+- [x] Messages
 - [x] Horizontal Rules
 
 Navigations:

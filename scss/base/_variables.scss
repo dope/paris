@@ -148,7 +148,8 @@ $input-border:                  $color-grey--light;
 $input-placeholder-text:        $color-grey--dark;
 $input-text-color:              $color-black;
 $input-font-family:             $base-font-family;
-$input-font-size:               .8em;
+$input-font-size:               1em;
+$input-font-weight:             500;
 
 // Textarea
 $textarea-bg:                   $color-white;
@@ -156,7 +157,8 @@ $textarea-border:               $color-grey--light;
 $textarea-placeholder-text:     $color-grey--dark;
 $textarea-text-color:           $color-black;
 $textarea-font-family:          $base-font-family;
-$textarea-font-size:            .8em;
+$textarea-font-size:            1em;
+$textarea-font-weight:          500;
 
 // Dropdowns
 $dropdown-bg: $color-white;
@@ -164,10 +166,12 @@ $dropdown-border:               $color-grey--light;
 $dropdown-placeholder-text:     $color-grey--dark;
 $dropdown-text-color:           $color-black;
 $dropdown-font-family:          $base-font-family;
-$dropdown-font-size:            .8em;
+$dropdown-font-size:            1em;
+$dropdown-font-weight:          500;
 
 // Labels
-$label-font-size:               11px;
+$label-font-size:               14px;
+$label-font-weight:             500;
 
 
 // ==========================================================================

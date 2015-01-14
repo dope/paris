@@ -12,6 +12,12 @@
 
 // Usage: <form class="form"></form>
 .form {
+
+    // Usage: <div class="form__group"></div>
+    &__group {
+        margin-top: $half-spacing-unit;
+    }
+
     // Usage: <input type="text" class="form__input">
     &__input {
         display: block;
@@ -22,11 +28,12 @@
         border-width: 1px;
         border-style: solid;
         border-color: $input-border;
-        padding: 0.9em;
-        font-weight: 100;
+        padding: 1em 0.8em;
+        font-weight: $input-font-weight;
+        width: 100%;
 
         @include placeholder {
-            color: $color-black;
+            color: lighten($color-black, 70%);
         }
 
         &:focus {
@@ -37,21 +44,22 @@
     // Usage: <textarea class="form__textarea"></textarea>
     &__textarea {
         display: block;
+        width: 100%;
         background: $textarea-bg;
         color: $textarea-text-color;
         border-color: $textarea-border;
         font-family: $textarea-font-family;
         font-size: $textarea-font-size;
+        font-weight: $textarea-font-weight;
         color: $textarea-text-color;
         border-width: 1px;
         border-style: solid;
         resize: vertical;
         min-height: 8em;
-        padding: 0.9em;
-        font-weight: 100;
+        padding: 1em 0.8em;
 
         @include placeholder {
-            color: $color-black;
+            color: lighten($color-black, 70%);
         }
 
         &:focus {
@@ -64,36 +72,37 @@
         display: block;
         margin-top: $base-spacing-unit / 2.5;
         font-size: $label-font-size;
+        font-weight: $label-font-weight;
     }
-}
 
-// Usage:
-// <select class="select">
-//      <span class="select__arrow"></span>
-//      <option>Hello</option>
-//      <option>Hello</option>
-//      <option>Hello</option>
-//      <option>Hello</option>
-// </select>
-.select {
-    position: relative;
-    background: $dropdown-bg;
-    border-color: $dropdown-border;
-    padding: 1em;
-    min-width: 15em;
-    font-family: $dropdown-font-family;
-    font-size: $dropdown-font-size;
-    font-weight: 100;
+    // Usage:
+    // <select class="select">
+    //      <span class="select__arrow"></span>
+    //      <option>Hello</option>
+    //      <option>Hello</option>
+    //      <option>Hello</option>
+    //      <option>Hello</option>
+    // </select>
+    &__select {
+        position: relative;
+        background: $dropdown-bg;
+        border-color: $dropdown-border;
+        padding: 1em 0.8em;
+        min-width: 15em;
+        font-family: $dropdown-font-family;
+        font-size: $dropdown-font-size;
+        font-weight: $dropdown-font-weight;
+
+        &:focus {
+            border-color: lighten($color-black, 75%);
+        }
+    }
 
     &__arrow {
         display: block;
         width: 5px;
         height: 5px;
         background: red;
-    }
-
-    &:focus {
-        border-color: lighten($color-black, 75%);
     }
 }
 
