@@ -152,6 +152,7 @@
     //      <option>Hello</option>
     // </select>
     &__select {
+        -webkit-appearance: none;
         display: block;
         width: 100%;
         background: $dropdown-bg;
