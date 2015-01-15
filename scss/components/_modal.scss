@@ -5,29 +5,28 @@
 
 .modal {
     position: fixed;
-    top: -100%;
+    top: -200%;
     left: 0;
     right: 0;
     transition: top .33s ease-in-out, transform .33s ease;
-}
 
-.modal__inner {
-    padding: $base-spacing-unit;
-    background: $color-white;
-    margin: 0 auto;
-    width: 100%;
-    max-width: $md;
-}
+    &__inner {
+        padding: $base-spacing-unit;
+        background: $color-white;
+        margin: 0 auto;
+        width: 100%;
+        max-width: $md;
+    }
 
-.modal--open {
-    z-index: 100;
-    top: 50%;
-    transform: translateY(-50%);
+    &--open {
+        z-index: 100;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }
 
 
 /* The modal overlay (usually created dynamically) */
-
 .overlay {
     position: fixed;
     top: 0;
