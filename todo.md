@@ -1,9 +1,9 @@
 Colours
 Typography
 Forms:
-- [ ] Inputs
-- [ ] Textarea
-- [ ] Drop down
+- [x] Inputs
+- [x] Textarea
+- [x] Drop down
 - [ ] Radio Button
 - [ ] Checkbox
 - [x] Buttons
@@ -18,10 +18,10 @@ Navigations:
 
 Footers:
 - [ ] Sticky Footer
-4 Column Footer
+- [ ] 4 Column Footer
 
 Image styles:
-- [x] Rounded ☑
+- [x] Rounded
 - [ ] With opacity hover
 
 Helpers:
