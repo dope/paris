@@ -11,7 +11,7 @@
 */
 
 .btn {
-    // Usage: <button class="btn">Hello World</button>
+    /* Usage: <button class="btn">Hello World</button> */
     position: relative;
     z-index: 1;
     background: $btn-default-background;
@@ -36,7 +36,7 @@
         background: darken($btn-default-background, 15%);
     }
 
-    // Usage: <button class="btn btn--black">Hello World</button>
+    /* Usage: <button class="btn btn--black">Hello World</button> */
     &--black {
         background: $btn-black-background;
         color: $btn-black-color;
@@ -52,7 +52,7 @@
         }
     }
 
-    // Usage: <button class="btn btn--white">Hello World</button>
+    /* Usage: <button class="btn btn--white">Hello World</button> */
     &--white {
         background: $btn-white-background;
         color: $btn-white-color;
@@ -68,7 +68,7 @@
         }
     }
 
-    // Usage: <button class="btn btn--blue">Hello World</button>
+    /* Usage: <button class="btn btn--blue">Hello World</button> */
     &--blue {
         background: $btn-blue-background;
         color: $btn-blue-color;
@@ -83,7 +83,7 @@
         }
     }
 
-    // Usage: <button class="btn btn--green">Hello World</button>
+    /* Usage: <button class="btn btn--green">Hello World</button> */
     &--green {
         background: $btn-green-background;
         color: $btn-green-color;
@@ -99,7 +99,7 @@
         }
     }
 
-    // Usage: <button class="btn btn--red">Hello World</button>
+    /* Usage: <button class="btn btn--red">Hello World</button> */
     &--red {
         background: $btn-red-background;
         color: $btn-red-color;
@@ -115,7 +115,7 @@
         }
     }
 
-    // Usage: <button class="btn btn--red">Hello World</button>
+    /* Usage: <button class="btn btn--red">Hello World</button> */
     &--orange {
         background: $btn-orange-background;
         color: $btn-orange-color;
@@ -131,7 +131,7 @@
         }
     }
 
-    // Usage: <button class="btn btn--yellow">Hello World</button>
+    /* Usage: <button class="btn btn--yellow">Hello World</button> */
     &--yellow {
         background: $btn-yellow-background;
         color: $btn-yellow-color;
@@ -147,7 +147,7 @@
         }
     }
 
-    // Usage: <button class="btn btn--purple">Hello World</button>
+    /* Usage: <button class="btn btn--purple">Hello World</button> */
     &--purple {
         background: $btn-purple-background;
         color: $btn-purple-color;
@@ -163,7 +163,7 @@
         }
     }
 
-    // Usage: <button class="btn btn--success">Hello World</button>
+    /* Usage: <button class="btn btn--success">Hello World</button> */
     &--success {
         background: $btn-success-background;
         color: $btn-success-color;
@@ -179,7 +179,7 @@
         }
     }
 
-    // Usage: <button class="btn btn--info">Hello World</button>
+    /* Usage: <button class="btn btn--info">Hello World</button> */
     &--info {
         background: $btn-info-background;
         color: $btn-info-color;
@@ -195,7 +195,7 @@
         }
     }
 
-    // Usage: <button class="btn btn--error">Hello World</button>
+    /* Usage: <button class="btn btn--error">Hello World</button> */
     &--error {
         background: $btn-error-background;
         color: $btn-error-color;
@@ -211,7 +211,7 @@
         }
     }
 
-    // Usage: <button class="btn btn--warning">Hello World</button>
+    /* Usage: <button class="btn btn--warning">Hello World</button> */
     &--warning {
         background: $btn-warning-background;
         color: $btn-warning-color;
@@ -227,18 +227,18 @@
         }
     }
 
-    // Different styles
-    // Usage: <button class="btn btn--rounded">Hi</button>
+    /* Different styles */
+    /* Usage: <button class="btn btn--rounded">Hi</button> */
     &--rounded {
         @include border-radius(100px);
     }
 
-    // Usage: <button class="btn btn--cornered">Hi</button>
+    /* Usage: <button class="btn btn--cornered">Hi</button> */
     &--cornered {
         @include border-radius(6px);
     }
 
-    // Usage: <button class="btn btn--scale">Hi</button>
+    /* Usage: <button class="btn btn--scale">Hi</button> */
     &--scale {
         &:hover {
             transform: scale(1.03);
@@ -251,27 +251,27 @@
         width: 100%;
     }
 
-    // Usage: <button class="btn btn--xs">Hi</button>
+    /* Usage: <button class="btn btn--xs">Hi</button> */
     &--xs {
         padding: 0.7em 0.6em;
     }
 
-    // Usage: <button class="btn btn--sm">Hi</button>
+    /* Usage: <button class="btn btn--sm">Hi</button> */
     &--sm {
         padding: 1em 1em;
     }
 
-    // Usage: <button class="btn btn--md">Hi</button>
+    /* Usage: <button class="btn btn--md">Hi</button> */
     &--md {
         padding: 1.2em 1.5em;
     }
 
-    // Usage: <button class="btn btn--lg">Hi</button>
+    /* Usage: <button class="btn btn--lg">Hi</button> */
     &--lg {
         padding: 1.3em 2.5em;
     }
 
-    // Usage: <button class="btn btn--xl">Hi</button>
+    /* Usage: <button class="btn btn--xl">Hi</button> */
     &--xl {
         padding: 1.5em 3em;
     }

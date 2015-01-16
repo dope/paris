@@ -3,6 +3,7 @@ var gulp         = require('gulp');
 var sass         = require('gulp-sass');
 var browserSync  = require('browser-sync');
 var prefix       = require('gulp-autoprefixer');
+var scsslint     = require('gulp-scss-lint');
 
 // create sass tasks
 gulp.task('sass', function () {
@@ -10,6 +11,12 @@ gulp.task('sass', function () {
         .pipe(sass({outputStyle: 'compressed', includePaths: ['scss']}))
         .pipe(prefix('last 2 versions', '> 1%', 'ie 8', 'Android 2', 'Firefox ESR'))
         .pipe(gulp.dest('css'));
+});
+
+// sass lint
+gulp.task('scss-lint', function() {
+    gulp.src('scss/**/*.scss')
+    .pipe(scsslint());
 });
 
 // create browser sync task
@@ -22,6 +29,6 @@ gulp.task('browser-sync', function() {
 });
 
 // default task (just run gulp)
-gulp.task('default', ['sass', 'browser-sync'], function () {
+gulp.task('default', ['sass', 'browser-sync', 'scss-lint'], function () {
     gulp.watch('scss/**/*.scss', ['sass']);
 });
