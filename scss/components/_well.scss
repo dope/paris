@@ -11,21 +11,21 @@
 */
 
 .well {
-    // Usage: <div class="well">Content here</div>
-    background: $well-default-color;
-    padding: $well-default-padding;
-    border-radius: $well-cornered;
-    margin: $base-spacing-unit auto;
+  /* Usage: <div class="well">Content here</div> */
+  background: $well-default-color;
+  padding: $well-default-padding;
+  border-radius: $well-cornered;
+  margin: $base-spacing-unit auto;
 
-    &--light {
-        background: $well-light-color;
-    }
+  &--light {
+    background: $well-light-color;
+  }
 
-    &--dark {
-        background: $well-dark-color;
-        > * {
-            color: $color-white;
-        }
+  &--dark {
+    background: $well-dark-color;
+    > * {
+      color: $color-white;
     }
+  }
 }
 

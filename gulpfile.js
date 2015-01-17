@@ -7,28 +7,22 @@ var scsslint     = require('gulp-scss-lint');
 
 // create sass tasks
 gulp.task('sass', function () {
-    gulp.src('scss/**/*.scss')
-        .pipe(sass({outputStyle: 'compressed', includePaths: ['scss']}))
-        .pipe(prefix('last 2 versions', '> 1%', 'ie 8', 'Android 2', 'Firefox ESR'))
-        .pipe(gulp.dest('css'));
-});
-
-// sass lint
-gulp.task('scss-lint', function() {
-    gulp.src('scss/**/*.scss')
-    .pipe(scsslint());
+  gulp.src('scss/**/*.scss')
+  .pipe(sass({outputStyle: 'compressed', includePaths: ['scss']}))
+  .pipe(prefix('last 2 versions', '> 1%', 'ie 8', 'Android 2', 'Firefox ESR'))
+  .pipe(gulp.dest('css'));
 });
 
 // create browser sync task
 gulp.task('browser-sync', function() {
-    browserSync.init(['css/*.css', 'js/**/*.js', 'index.html'], {
-        server: {
-            baseDir: './'
-        }
-    });
+  browserSync.init(['css/*.css', 'js/**/*.js', 'index.html'], {
+    server: {
+      baseDir: './'
+    }
+  });
 });
 
 // default task (just run gulp)
-gulp.task('default', ['sass', 'browser-sync', 'scss-lint'], function () {
-    gulp.watch('scss/**/*.scss', ['sass']);
+gulp.task('default', ['sass', 'browser-sync'], function () {
+  gulp.watch('scss/**/*.scss', ['sass']);
 });

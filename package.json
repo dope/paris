@@ -9,8 +9,7 @@
   },
   "devDependencies": {
     "browser-sync": "^1.5.2",
-    "gulp-autoprefixer": "^1.0.1",
-    "gulp-scss-lint": "^0.1.4"
+    "gulp-autoprefixer": "^1.0.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
