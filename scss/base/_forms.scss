@@ -16,27 +16,6 @@
   /* Usage: <div class="form__group"></div> */
   &__group {
     margin-top: $half-spacing-unit;
-
-    /* Usage: <div class="form__group form__group--arrow"></div> */
-    &--arrow {
-      position: relative;
-
-      &:after {
-        position: absolute;
-        width: 0;
-        height: 0;
-        border-top: 5px solid $color-black;
-        border-right: 5px solid transparent;
-        border-bottom: 5px solid transparent;
-        border-left: 5px solid transparent;
-        cursor: pointer;
-        top: 28px;
-        bottom: 0;
-        right: 20px;
-        margin: auto;
-        content: "";
-      }
-    }
   }
 
   /* Usage: <input type="text" class="form__input"> */
@@ -145,10 +124,6 @@
 
   /* Usage: */
   /* <select class="select"> */
-  /*      <span class="select__arrow"></span> */
-  /*      <option>Hello</option> */
-  /*      <option>Hello</option> */
-  /*      <option>Hello</option> */
   /*      <option>Hello</option> */
   /* </select> */
   &__select {
@@ -166,12 +141,5 @@
     &:focus {
       border-color: lighten($color-black, 75%);
     }
-  }
-
-  &__arrow {
-    display: block;
-    width: 5px;
-    height: 5px;
-    background: red;
   }
 }
