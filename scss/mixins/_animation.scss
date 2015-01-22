@@ -1,12 +1,12 @@
 /* Usage:
 ----------------------------------
 @include keyframes(slide) {
-    0% { 
-        opacity: 0; 
+    0% {
+        opacity: 0;
     }
-    
-    100% { 
-        opacity: 1; 
+
+    100% {
+        opacity: 1;
     }
 }
 
@@ -15,7 +15,7 @@
 */
 
 @mixin keyframes($animation-name) {
-    @keyframes $animation-name {
-        @content;
-    }
+  @keyframes $animation-name {
+    @content;
+  }
 }

@@ -12,20 +12,20 @@
 
 img,
 .img {
-    // Usage: <img src="paris.jpg" class="img" />
-    max-width: 100%;
-    display: block;
-    height: auto;
 
-    // Usage: <img src="paris.jpg" class="img img--rounded" />
-    // Will only look nice with a equal width and height eg. (500px x 500px)
-    &--rounded {
-        border-radius: $img-rounded;
-    }
+  /* Usage: <img src="paris.jpg" class="img" /> */
+  max-width: 100%;
+  display: block;
+  height: auto;
 
-    // Usage: <img src="paris.jpg" class="img img--cornered" />
-    &--cornered {
-        border-radius: $img-cornered;
-    }
+  /* Usage: <img src="paris.jpg" class="img img--rounded" /> */
+  /* Will only look nice with a equal width and height eg. (500px x 500px) */
+  &--rounded {
+    border-radius: $img-rounded;
+  }
 
+  /* Usage: <img src="paris.jpg" class="img img--cornered" /> */
+  &--cornered {
+    border-radius: $img-cornered;
+  }
 }

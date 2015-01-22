@@ -8,28 +8,28 @@
 }
 
 .modal {
-    visibility: hidden;
-    position: fixed;
-    top: -200%;
-    left: 0;
-    right: 0;
-    bottom: 20%;
-    z-index: 100;
-    max-height: 70%;
-    transition: top .5s ease-in-out,
-                visibility .5s linear,
-                z-index .1s linear;
+  visibility: hidden;
+  position: fixed;
+  top: -200%;
+  left: 0;
+  right: 0;
+  bottom: 20%;
+  z-index: 100;
+  max-height: 70%;
+  transition: top .5s ease-in-out,
+  visibility .5s linear,
+  z-index .1s linear;
 
 }
-  .modal__inner {
-    padding: $base-spacing-unit;
-    background: $color-white;
-    margin: 0 auto;
-    width: 100%;
-    max-width: $sm;
-    max-height: 100%;
-    overflow-y: scroll;
-  }
+.modal__inner {
+  padding: $base-spacing-unit;
+  background: $color-white;
+  margin: 0 auto;
+  width: 100%;
+  max-width: $sm;
+  max-height: 100%;
+  overflow-y: scroll;
+}
 
 .modal--open {
   visibility: visible;
@@ -40,18 +40,18 @@
 
 /* The modal overlay (usually created dynamically) */
 .overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba($color-black, .5);
-    z-index: -1;
-    opacity: 0;
-    transition: opacity .3s ease-in;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba($color-black, .5);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity .3s ease-in;
 }
 
 .overlay--open {
-    z-index: 99;
-    opacity: 1;
+  z-index: 99;
+  opacity: 1;
 }

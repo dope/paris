@@ -10,176 +10,136 @@
 *
 */
 
-// Usage: <form class="form"></form>
+/* Usage: <form class="form"></form> */
 .form {
 
-    // Usage: <div class="form__group"></div>
-    &__group {
-        margin-top: $half-spacing-unit;
+  /* Usage: <div class="form__group"></div> */
+  &__group {
+    margin-top: $half-spacing-unit;
+  }
 
-        // Usage: <div class="form__group form__group--arrow"></div>
-        &--arrow {
-            position: relative;
+  /* Usage: <input type="text" class="form__input"> */
+  &__input {
+    display: block;
+    background: $input-bg;
+    font-family: $input-font-family;
+    font-size: $input-font-size;
+    color: $input-text-color;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $input-border;
+    padding: 1em 0.8em;
+    font-weight: $input-font-weight;
+    width: 100%;
 
-            &:after {
-                position: absolute;
-                width: 0;
-                height: 0;
-                border-top: 5px solid $color-black;
-                border-right: 5px solid transparent;
-                border-bottom: 5px solid transparent;
-                border-left: 5px solid transparent;
-                cursor: pointer;
-                top: 28px;
-                bottom: 0;
-                right: 20px;
-                margin: auto;
-                content: "";
-            }
-        }
+    @include placeholder {
+      color: lighten($color-black, 70%);
     }
 
-    // Usage: <input type="text" class="form__input">
-    &__input {
-        display: block;
-        background: $input-bg;
-        font-family: $input-font-family;
-        font-size: $input-font-size;
-        color: $input-text-color;
-        border-width: 1px;
-        border-style: solid;
-        border-color: $input-border;
-        padding: 1em 0.8em;
-        font-weight: $input-font-weight;
-        width: 100%;
+    &:focus {
+      border-color: lighten($color-black, 75%);
+    }
+  }
 
-        @include placeholder {
-            color: lighten($color-black, 70%);
-        }
-
-        &:focus {
-            border-color: lighten($color-black, 75%);
-        }
+  /* Usage: <input type="checkbox" class="form__checkbox"> */
+  &__checkbox {
+    position: relative;
+    -webkit-appearance: none;
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    &:after {
+      position: absolute;
+      top: -5px;
+      left: 0;
+      right:0;
+      bottom: 0;
+      margin: auto;
+      width: 16px;
+      height: 16px;
+      background: $color-white;
+      border: 1px solid darken($color-white, 15%);
+      border-radius: 3px;
+      content: "";
+      cursor: pointer;
     }
 
-    // Usage: <input type="checkbox" class="form__checkbox">
-    &__checkbox {
-        position: relative;
-        -webkit-appearance: none;
-        margin-right: 20px;
-        display: inline-block;
-        vertical-align: middle;
-        &:after {
-            position: absolute;
-            top: -5px;
-            left: 0;
-            right:0;
-            bottom: 0;
-            margin: auto;
-            width: 16px;
-            height: 16px;
-            background: $color-white;
-            border: 1px solid darken($color-white, 15%);
-            border-radius: 3px;
-            content: "";
-            cursor: pointer;
-        }
+    &:checked {
+      &:after {
+        position: absolute;
+        top: -5px;
+        left: 0;
+        right:0;
+        bottom: 0;
+        margin: auto;
+        width: 16px;
+        height: 16px;
+        background: darken($color-white, 15%);
+        content: "";
+        cursor: pointer;
+      }
+    }
+  }
 
-        &:checked {
-            &:after {
-                position: absolute;
-                top: -5px;
-                left: 0;
-                right:0;
-                bottom: 0;
-                margin: auto;
-                width: 16px;
-                height: 16px;
-                background: darken($color-white, 15%);
-                content: "";
-                cursor: pointer;
-            }
-        }
+  /* Usage: <textarea class="form__textarea"></textarea> */
+  &__textarea {
+    display: block;
+    width: 100%;
+    background: $textarea-bg;
+    color: $textarea-text-color;
+    border-color: $textarea-border;
+    font-family: $textarea-font-family;
+    font-size: $textarea-font-size;
+    font-weight: $textarea-font-weight;
+    color: $textarea-text-color;
+    border-width: 1px;
+    border-style: solid;
+    resize: vertical;
+    min-height: 8em;
+    padding: 1em 0.8em;
+
+    @include placeholder {
+      color: lighten($color-black, 70%);
     }
 
-    // Usage: <textarea class="form__textarea"></textarea>
-    &__textarea {
-        display: block;
-        width: 100%;
-        background: $textarea-bg;
-        color: $textarea-text-color;
-        border-color: $textarea-border;
-        font-family: $textarea-font-family;
-        font-size: $textarea-font-size;
-        font-weight: $textarea-font-weight;
-        color: $textarea-text-color;
-        border-width: 1px;
-        border-style: solid;
-        resize: vertical;
-        min-height: 8em;
-        padding: 1em 0.8em;
-
-        @include placeholder {
-            color: lighten($color-black, 70%);
-        }
-
-        &:focus {
-            border-color: lighten($color-black, 75%);
-        }
+    &:focus {
+      border-color: lighten($color-black, 75%);
     }
+  }
 
-    // Usage: <label class="form__label"></label>
-    &__label {
-        display: block;
-        margin-top: $base-spacing-unit / 2.5;
-        font-size: $label-font-size;
-        font-weight: $label-font-weight;
+  /* Usage: <label class="form__label"></label> */
+  &__label {
+    display: block;
+    margin-top: $base-spacing-unit / 2.5;
+    font-size: $label-font-size;
+    font-weight: $label-font-weight;
 
-        &--checkbox {
-            display: inline-block;
-            vertical-align: middle;
-            margin: 0;
-            cursor: pointer
-        }
+    &--checkbox {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0;
+      cursor: pointer
     }
+  }
 
-    // Usage:
-    // <select class="select">
-    //      <span class="select__arrow"></span>
-    //      <option>Hello</option>
-    //      <option>Hello</option>
-    //      <option>Hello</option>
-    //      <option>Hello</option>
-    // </select>
-    &__select {
-        display: block;
-        width: 100%;
-        background: $dropdown-bg;
-        border-color: $dropdown-border;
-        padding: 1em 0.8em;
-        min-width: 15em;
-        font-family: $dropdown-font-family;
-        font-size: $dropdown-font-size;
-        font-weight: $dropdown-font-weight;
+  /* Usage: */
+  /* <select class="select"> */
+  /*      <option>Hello</option> */
+  /* </select> */
+  &__select {
+    -webkit-appearance: none;
+    display: block;
+    width: 100%;
+    background: $dropdown-bg;
+    border-color: $dropdown-border;
+    padding: 1em 0.8em;
+    min-width: 15em;
+    font-family: $dropdown-font-family;
+    font-size: $dropdown-font-size;
+    font-weight: $dropdown-font-weight;
 
-        &:focus {
-            border-color: lighten($color-black, 75%);
-        }
+    &:focus {
+      border-color: lighten($color-black, 75%);
     }
-
-    &__arrow {
-        display: block;
-        width: 5px;
-        height: 5px;
-        background: red;
-    }
+  }
 }
-
-
-
-
-
-
-
-
-
