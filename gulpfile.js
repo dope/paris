@@ -3,7 +3,6 @@ var gulp         = require('gulp');
 var sass         = require('gulp-sass');
 var browserSync  = require('browser-sync');
 var prefix       = require('gulp-autoprefixer');
-var scsslint     = require('gulp-scss-lint');
 
 // create sass tasks
 gulp.task('sass', function () {
