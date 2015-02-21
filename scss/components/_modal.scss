@@ -20,21 +20,21 @@
   visibility .5s linear,
   z-index .1s linear;
 
-}
-.modal__inner {
-  padding: $base-spacing-unit;
-  background: $color-white;
-  margin: 0 auto;
-  width: 100%;
-  max-width: $sm;
-  max-height: 100%;
-  overflow-y: scroll;
-}
+  &__inner {
+    padding: $base-spacing-unit;
+    background: $color-white;
+    margin: 0 auto;
+    width: 100%;
+    max-width: $sm;
+    max-height: 100%;
+    overflow-y: scroll;
 
-.modal--open {
-  visibility: visible;
-  top: 20%;
-  bottom: 20%;
+    &--open {
+      visibility: visible;
+      top: 20%;
+      bottom: 20%;
+    }
+  }
 }
 
 

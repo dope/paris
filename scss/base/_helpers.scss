@@ -10,7 +10,22 @@
 *
 */
 
-/* Margins */
+/*=============================================
+=                   Margin                    =
+=============================================*/
+.m {
+  margin: $half-spacing-unit;
+}
+
+.m\+ {
+  margin: $base-spacing-unit;
+}
+
+.m\- {
+  margin: $half-spacing-unit;
+}
+
+// margin top
 .mt {
   margin-top: $half-spacing-unit;
 }
@@ -19,10 +34,238 @@
   margin-top: $base-spacing-unit;
 }
 
+.ml\- {
+  margin-left: $half-spacing-unit;
+}
+
+// margin right
+.mr {
+  margin-right: $half-spacing-unit;
+}
+
+.mr\+ {
+  margin-right: $base-spacing-unit;
+}
+
+.mr\- {
+  margin-right: $half-spacing-unit;
+}
+
+// margin bottom
 .mb {
   margin-bottom: $half-spacing-unit;
 }
 
 .mb\+ {
   margin-bottom: $base-spacing-unit;
+}
+
+.mb\- {
+  margin-bottom: $half-spacing-unit;
+}
+
+// margin left
+.ml {
+  margin-left: $half-spacing-unit;
+}
+
+.ml\+ {
+  margin-left: $base-spacing-unit;
+}
+
+.ml\- {
+  margin-left: $half-spacing-unit;
+}
+
+
+/*=============================================
+=                   Padding                   =
+=============================================*/
+.p {
+  padding: $half-spacing-unit;
+}
+
+.p\+ {
+  padding: $base-spacing-unit;
+}
+
+.p\- {
+  padding: $half-spacing-unit;
+}
+
+// padding top
+.pt {
+  padding-top: $half-spacing-unit;
+}
+
+.pt\+ {
+  padding-top: $base-spacing-unit;
+}
+
+.pl\- {
+  padding-left: $half-spacing-unit;
+}
+
+// padding right
+.pr {
+  padding-right: $half-spacing-unit;
+}
+
+.pr\+ {
+  padding-right: $base-spacing-unit;
+}
+
+.mr\- {
+  padding-right: $half-spacing-unit;
+}
+
+// padding bottom
+.pb {
+  padding-bottom: $half-spacing-unit;
+}
+
+.pb\+ {
+  padding-bottom: $base-spacing-unit;
+}
+
+.pb\- {
+  padding-bottom: $half-spacing-unit;
+}
+
+// padding left
+.pl {
+  padding-left: $half-spacing-unit;
+}
+
+.pl\+ {
+  padding-left: $base-spacing-unit;
+}
+
+.pl\- {
+  padding-left: $half-spacing-unit;
+}
+
+/*=============================================
+=                   Floats                    =
+=============================================*/
+// float left
+.fl {
+  float: left;
+}
+
+// float right
+.fr {
+  float: right;
+}
+
+// float center
+.fc {
+  width: auto;
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+/*=============================================
+=                   Display                   =
+=============================================*/
+// display none
+.dn {
+  display: none;
+}
+
+// display block
+.db {
+  display: block;
+}
+
+// display inline
+.di {
+  display: inline;
+}
+
+// diplay inline block
+.dib {
+  display: inline-block;
+}
+
+/*=============================================
+=                   Align                    =
+=============================================*/
+.vat {
+  vertical-align: top;
+}
+
+.vam {
+  vertical-align: middle;
+}
+
+.vab {
+  vertical-align: baseline;
+}
+
+/*=============================================
+=                   Text Align                =
+=============================================*/
+.tc {
+  text-align: center;
+}
+
+.tl {
+  text-align: left;
+}
+
+.tr {
+  text-align: right;
+}
+
+/*=============================================
+=                   Widths                    =
+=============================================*/
+.full {
+  width: 100%;
+}
+
+.half {
+  width: 50%;
+}
+
+.quarter {
+  width: 25%;
+}
+
+.fifth {
+  width: 20%;
+}
+
+.third {
+  width: 33.333%;
+}
+
+/*=============================================
+=                    Type                    =
+=============================================*/
+.h1 {
+  font-size: $h1-font-size;
+}
+
+.h2 {
+  font-size: $h2-font-size;
+}
+
+.h3 {
+  font-size: $h3-font-size;
+}
+
+.h4 {
+  font-size: $h4-font-size;
+}
+
+.h5 {
+  font-size: $h5-font-size;
+}
+
+.h6 {
+  font-size: $h6-font-size;
 }
