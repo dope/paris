@@ -1,7 +1,7 @@
  /*
  *
  * Paris v0.1
- * Created by @joericho and @quagliero
+ * Created by @joericho
  *
  * Licensed under MIT
  * -------------------
@@ -17,20 +17,19 @@
 @import 'mixins/border-radius';
 @import 'mixins/animation';
 @import 'mixins/placeholder';
-
-/* Variables  */
-@import 'base/variables';
+@import 'mixins/clearfix';
 
 /* Base */
+@import 'base/colors';
+@import 'base/spacing';
+@import 'base/typography';
 @import 'base/styles';
 @import 'base/links';
 @import 'base/forms';
 @import 'base/buttons';
-@import 'base/typography';
 @import 'base/hr';
 @import 'base/images';
 @import 'base/helpers';
-@import 'base/colors';
 
 /* Components */
 @import 'components/messages';

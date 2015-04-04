@@ -2,12 +2,10 @@
 // HTML Usage: <div class="clearfix">Hey</div>
 .clearfix,
 %clearfix {
-  *zoom: 1;
-  &:before, &:after {
-    content: " ";
-    display: table;
-  }
   &:after {
+    content: "";
+    display: table;
     clear: both;
   }
 }
+

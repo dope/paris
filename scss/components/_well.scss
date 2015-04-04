@@ -1,7 +1,7 @@
 /*
 *
 * Paris v0.1
-* Created by @joericho and @quagliero
+* Created by @joericho
 *
 * Licensed under MIT
 * -------------------
@@ -10,11 +10,23 @@
 *
 */
 
+/* Main Variables */
+
+/* Colors */
+$well-default-color:            $color-grey--light;
+$well-light-color:              $color-white;
+$well-dark-color:               $color-grey--dark;
+
+/* Styles */
+$well-default-padding:          25px;
+$well-light-padding:            25px;
+$well-dark-padding:             25px;
+
 .well {
   /* Usage: <div class="well">Content here</div> */
   background: $well-default-color;
   padding: $well-default-padding;
-  border-radius: $well-cornered;
+  @include border-radius(5px);
   margin: $base-spacing-unit auto;
 
   &--light {

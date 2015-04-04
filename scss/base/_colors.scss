@@ -1,7 +1,7 @@
 /*
 *
 * Paris v0.1
-* Created by @joericho and @quagliero
+* Created by @joericho
 *
 * Licensed under MIT
 * -------------------
@@ -9,6 +9,59 @@
 * -------------------
 *
 */
+
+/* Main Variables */
+
+/* Black */
+$color-black:                   black;
+$one-night-in-paris:            $color-black;
+
+/* White */
+$color-white:                   white;
+
+/* Grey */
+$color-grey:                    #696969;
+$color-grey--light:             #e9e9e9;
+$color-grey--dark:              #413d3d;
+
+/* Blue */
+$color-blue:                    #446CB3;
+$color-blue--light:             #638DD9;
+$color-blue--dark:              #3B5E9C;
+
+/* Green */
+$color-green:                   #B8C45A;
+$color-green--light:            #D3DE7C;
+$color-green--dark:             #A3AE4B;
+
+/* Red */
+$color-red:                     #EF3B38;
+$color-red--light:              #F6524F;
+$color-red--dark:               #C82E2B;
+
+/* Orange */
+$color-orange:                  #F29D3F;
+$color-orange--light:           #FFB96D;
+$color-orange--dark:            #E0913B;
+
+/* Yellow */
+$color-yellow:                  #FBC022;
+$color-yellow--light:           #FFD35C;
+$color-yellow--dark:            #EBB31D;
+
+/* Purple */
+$color-purple:                  #724E65;
+$color-purple--light:           #88637B;
+$color-purple--dark:            #624256;
+
+/* Alerts, Messages etc. */
+$color-success:                 #2ecc71;
+$color-info:                    #3498db;
+$color-error:                   #cf000f;
+$color-warning:                 #f4d03f;
+
+/* Brand Color */
+$color-accent:                  $color-blue;
 
 /* Black */
 .bg-black {

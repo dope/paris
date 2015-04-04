@@ -1,7 +1,7 @@
 /*
 *
 * Paris v0.1
-* Created by @joericho and @quagliero
+* Created by @joericho
 *
 * Licensed under MIT
 * -------------------
@@ -21,11 +21,11 @@ img,
   /* Usage: <img src="paris.jpg" class="img img--rounded" /> */
   /* Will only look nice with a equal width and height eg. (500px x 500px) */
   &--rounded {
-    border-radius: $img-rounded;
+    @include border-radius(100%);
   }
 
   /* Usage: <img src="paris.jpg" class="img img--cornered" /> */
   &--cornered {
-    border-radius: $img-cornered;
+    @include border-radius(10px);
   }
 }

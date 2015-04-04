@@ -1,7 +1,7 @@
 /*
 *
 * Paris v0.1
-* Created by @joericho and @quagliero
+* Created by @joericho
 *
 * Licensed under MIT
 * -------------------
@@ -9,6 +9,20 @@
 * -------------------
 *
 */
+
+/* Main Variables */
+
+/* Sizes */
+$hr-default-height:             1px;
+$hr-thick-height:               5px;
+$hr-dark-height:                1px;
+$hr-brand-height:               1px;
+
+/* Colors */
+$hr-default-color:              lighten($color-black, 90%);
+$hr-thick-color:                lighten($color-black, 90%);
+$hr-dark-color:                 $color-black;
+$hr-brand-color:                $color-accent;
 
 hr,
 .hr {

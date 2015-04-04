@@ -1,7 +1,7 @@
 /*
 *
 * Paris v0.1
-* Created by @joericho and @quagliero
+* Created by @joericho
 *
 * Licensed under MIT
 * -------------------
@@ -9,6 +9,65 @@
 * -------------------
 *
 */
+
+/* Main Variables */
+
+/* Generic Button (Grey) */
+$btn-default-background:        $color-grey;
+$btn-default-color:             $color-white;
+$btn-default-text:              $base-font-family;
+$btn-default-font-weight:       500;
+$btn-default-font-size:         0.7em;
+$btn-default-border:            none;
+$btn-default-padding:           1.1em 1.7em;
+
+/* Black Button */
+$btn-black-background:          $color-black;
+$btn-black-color:               $color-white;
+
+/* White Button */
+$btn-white-background:          $color-white;
+$btn-white-color:               $color-black;
+
+/* Blue Button */
+$btn-blue-background:           $color-blue;
+$btn-blue-color:                $color-white;
+
+/* Green Button */
+$btn-green-background:          $color-green;
+$btn-green-color:               $color-white;
+
+/* Red Button */
+$btn-red-background:            $color-red;
+$btn-red-color:                 $color-white;
+
+/* Orange Button */
+$btn-orange-background:         $color-orange;
+$btn-orange-color:              $color-white;
+
+/* Yellow Button */
+$btn-yellow-background:         $color-yellow;
+$btn-yellow-color:              $color-white;
+
+/* Purple Button */
+$btn-purple-background:         $color-purple;
+$btn-purple-color:              $color-white;
+
+/* Success Button */
+$btn-success-background:        $color-success;
+$btn-success-color:             $color-white;
+
+/* Info Button */
+$btn-info-background:           $color-info;
+$btn-info-color:                $color-white;
+
+/* Error Button */
+$btn-error-background:          $color-error;
+$btn-error-color:               $color-white;
+
+/* Warning Button */
+$btn-warning-background:        $color-warning;
+$btn-warning-color:             $color-white;
 
 .btn {
   /* Usage: <button class="btn">Hello World</button> */

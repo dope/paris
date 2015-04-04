@@ -26,14 +26,14 @@ Image styles:
 
 Helpers:
 - [x] Color classes
-- [ ] Font size classes
+- [x] Font size classes
 - [ ] Animations
 - [ ] Transitions
-- [ ] Margin
-- [ ] Padding
-- [ ] Floats
-- [ ] Text aligns
+- [x] Margin
+- [x] Padding
+- [x] Floats
+- [x] Text aligns
 - [ ] Positions
-- [ ] Displays
-- [ ] Vertical Aligns
+- [x] Displays
+- [x] Vertical Aligns
 - [ ] Devices show and hide

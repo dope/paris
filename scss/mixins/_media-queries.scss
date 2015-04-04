@@ -1,4 +1,13 @@
 // Media Queries
+
+/* Main Variables */
+
+$xs:                            30em;
+$sm:                            40em;
+$md:                            50em;
+$lg:                            68.750em;
+$xl:                            80em;
+
 // Usage: @include xs { // content }
 @mixin xs {
   @media (max-width: $xs) {
