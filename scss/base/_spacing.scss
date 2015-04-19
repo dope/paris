@@ -13,5 +13,5 @@
 /* Main Variables */
 
 $base-spacing-unit:             34px;
-$half-spacing-unit:             34px / 2;
-$quarter-spacing-unit:          34px / 4;
+$half-spacing-unit:             $base-spacing-unit / 2;
+$quarter-spacing-unit:          $base-spacing-unit / 4;

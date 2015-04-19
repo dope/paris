@@ -9,7 +9,9 @@
   },
   "devDependencies": {
     "browser-sync": "^1.5.2",
-    "gulp-autoprefixer": "^1.0.1"
+    "gulp-autoprefixer": "^1.0.1",
+    "gulp-plumber": "^1.0.0",
+    "gulp-ruby-sass": "^1.0.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

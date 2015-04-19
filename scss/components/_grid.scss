@@ -11,12 +11,15 @@
 */
 
 /* Main Variables */
+$grid-width:   1200px;
+$grid-gutter:  $quarter-spacing-unit;
 
-$grid-width:                    1200px;
-$grid-gutter:                   $base-spacing-unit;
+/* 12 column options */
+$grid-start:   1;
+$grid-end:     12;
 
-/* Define your columns */
-$grid-columns: 20, 25, 33.33, 50, 75, 100;
+/* Generic column options */
+$grid-generic: 25, 40, 60, 75;
 
 /* Lets keep shit simple. */
 .grid {
@@ -30,8 +33,27 @@ $grid-columns: 20, 25, 33.33, 50, 75, 100;
   }
 }
 
-@each $i in $grid-columns {
-  .grid__col--#{$i} {
-      width: percentage($i / 100);
-  }
+/* 12 columns */
+@for $i from $grid-start through $grid-end {
+    .grid__col--#{$i} {
+        width: 100% / $i;
+    }
+}
+
+/* Generic columns */
+@each $i in $grid-generic {
+    .grid__col--#{$i} {
+        width: percentage($i / 100);
+    }
+}
+
+/* Responsive columns */
+
+$grid-media-queries: ('xs', 'sm', 'md', 'lg', 'xl');
+@each $g-mq in $grid-media-queries {
+    @include sm {
+      .grid__#{$g-mq}--1 {
+          width: 100% !important;
+      }
+    }
 }
