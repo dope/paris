@@ -14,67 +14,67 @@
 =                   Margin                    =
 =============================================*/
 .m {
-  margin: $half-spacing-unit;
+  margin: $half-spacing-unit !important;
 }
 
 .m\+ {
-  margin: $base-spacing-unit;
+  margin: $base-spacing-unit !important;
 }
 
 .m\- {
-  margin: $half-spacing-unit;
+  margin: $half-spacing-unit !important;
 }
 
 // margin top
 .mt {
-  margin-top: $half-spacing-unit;
+  margin-top: $half-spacing-unit !important;
 }
 
 .mt\+ {
-  margin-top: $base-spacing-unit;
+  margin-top: $base-spacing-unit !important;
 }
 
 .ml\- {
-  margin-left: $half-spacing-unit;
+  margin-left: $half-spacing-unit !important;
 }
 
 // margin right
 .mr {
-  margin-right: $half-spacing-unit;
+  margin-right: $half-spacing-unit !important;
 }
 
 .mr\+ {
-  margin-right: $base-spacing-unit;
+  margin-right: $base-spacing-unit !important;
 }
 
 .mr\- {
-  margin-right: $half-spacing-unit;
+  margin-right: $half-spacing-unit !important;
 }
 
 // margin bottom
 .mb {
-  margin-bottom: $half-spacing-unit;
+  margin-bottom: $half-spacing-unit !important;
 }
 
 .mb\+ {
-  margin-bottom: $base-spacing-unit;
+  margin-bottom: $base-spacing-unit !important;
 }
 
 .mb\- {
-  margin-bottom: $half-spacing-unit;
+  margin-bottom: $half-spacing-unit !important;
 }
 
 // margin left
 .ml {
-  margin-left: $half-spacing-unit;
+  margin-left: $half-spacing-unit !important;
 }
 
 .ml\+ {
-  margin-left: $base-spacing-unit;
+  margin-left: $base-spacing-unit !important;
 }
 
 .ml\- {
-  margin-left: $half-spacing-unit;
+  margin-left: $half-spacing-unit !important;
 }
 
 
@@ -82,67 +82,67 @@
 =                   Padding                   =
 =============================================*/
 .p {
-  padding: $half-spacing-unit;
+  padding: $half-spacing-unit !important;
 }
 
 .p\+ {
-  padding: $base-spacing-unit;
+  padding: $base-spacing-unit !important;
 }
 
 .p\- {
-  padding: $half-spacing-unit;
+  padding: $half-spacing-unit !important;
 }
 
 // padding top
 .pt {
-  padding-top: $half-spacing-unit;
+  padding-top: $half-spacing-unit !important;
 }
 
 .pt\+ {
-  padding-top: $base-spacing-unit;
+  padding-top: $base-spacing-unit !important;
 }
 
 .pl\- {
-  padding-left: $half-spacing-unit;
+  padding-left: $half-spacing-unit !important;
 }
 
 // padding right
 .pr {
-  padding-right: $half-spacing-unit;
+  padding-right: $half-spacing-unit !important;
 }
 
 .pr\+ {
-  padding-right: $base-spacing-unit;
+  padding-right: $base-spacing-unit !important;
 }
 
 .mr\- {
-  padding-right: $half-spacing-unit;
+  padding-right: $half-spacing-unit !important;
 }
 
 // padding bottom
 .pb {
-  padding-bottom: $half-spacing-unit;
+  padding-bottom: $half-spacing-unit !important;
 }
 
 .pb\+ {
-  padding-bottom: $base-spacing-unit;
+  padding-bottom: $base-spacing-unit !important;
 }
 
 .pb\- {
-  padding-bottom: $half-spacing-unit;
+  padding-bottom: $half-spacing-unit !important;
 }
 
 // padding left
 .pl {
-  padding-left: $half-spacing-unit;
+  padding-left: $half-spacing-unit !important;
 }
 
 .pl\+ {
-  padding-left: $base-spacing-unit;
+  padding-left: $base-spacing-unit !important;
 }
 
 .pl\- {
-  padding-left: $half-spacing-unit;
+  padding-left: $half-spacing-unit !important;
 }
 
 /*=============================================
@@ -150,20 +150,20 @@
 =============================================*/
 // float left
 .fl {
-  float: left;
+  float: left !important;
 }
 
 // float right
 .fr {
-  float: right;
+  float: right !important;
 }
 
 // float center
 .fc {
-  width: auto;
-  display: table;
-  margin-right: auto;
-  margin-left: auto;
+  width: auto !important;
+  display: table !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
 }
 
 
@@ -172,100 +172,100 @@
 =============================================*/
 // display none
 .dn {
-  display: none;
+  display: none !important;
 }
 
 // display block
 .db {
-  display: block;
+  display: block !important;
 }
 
 // display inline
 .di {
-  display: inline;
+  display: inline !important;
 }
 
 // diplay inline block
 .dib {
-  display: inline-block;
+  display: inline-block !important;
 }
 
 /*=============================================
 =                   Align                    =
 =============================================*/
 .vat {
-  vertical-align: top;
+  vertical-align: top !important;
 }
 
 .vam {
-  vertical-align: middle;
+  vertical-align: middle !important;
 }
 
 .vab {
-  vertical-align: baseline;
+  vertical-align: baseline !important;
 }
 
 /*=============================================
 =                   Text Align                =
 =============================================*/
 .tc {
-  text-align: center;
+  text-align: center !important;
 }
 
 .tl {
-  text-align: left;
+  text-align: left !important;
 }
 
 .tr {
-  text-align: right;
+  text-align: right !important;
 }
 
 /*=============================================
 =                   Widths                    =
 =============================================*/
 .full {
-  width: 100%;
+  width: 100% !important;
 }
 
 .half {
-  width: 50%;
+  width: 50% !important;
 }
 
 .quarter {
-  width: 25%;
+  width: 25% !important;
 }
 
 .fifth {
-  width: 20%;
+  width: 20% !important;
 }
 
 .third {
-  width: 33.333%;
+  width: 33.333% !important;
 }
 
 /*=============================================
 =                    Type                    =
 =============================================*/
 .h1 {
-  font-size: $h1-font-size;
+  font-size: $h1-font-size !important;
 }
 
 .h2 {
-  font-size: $h2-font-size;
+  font-size: $h2-font-size !important;
 }
 
 .h3 {
-  font-size: $h3-font-size;
+  font-size: $h3-font-size !important;
 }
 
 .h4 {
-  font-size: $h4-font-size;
+  font-size: $h4-font-size !important;
 }
 
 .h5 {
-  font-size: $h5-font-size;
+  font-size: $h5-font-size !important;
 }
 
 .h6 {
-  font-size: $h6-font-size;
+  font-size: $h6-font-size !important;
 }

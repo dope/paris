@@ -22,8 +22,8 @@ $well-default-padding:          25px;
 $well-light-padding:            25px;
 $well-dark-padding:             25px;
 
+/* Usage: <div class="well">Content here</div> */
 .well {
-  /* Usage: <div class="well">Content here</div> */
   background: $well-default-color;
   padding: $well-default-padding;
   @include border-radius(5px);

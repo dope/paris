@@ -7,7 +7,7 @@ Forms:
 - [ ] Radio Button
 - [ ] Checkbox
 - [x] Buttons
-- [ ] Grid System
+- [x] Grid System
 - [x] Messages
 - [x] Horizontal Rules
 
@@ -22,7 +22,6 @@ Footers:
 
 Image styles:
 - [x] Rounded
-- [ ] With opacity hover
 
 Helpers:
 - [x] Color classes

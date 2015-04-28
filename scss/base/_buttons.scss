@@ -84,6 +84,7 @@ $btn-warning-color:             $color-white;
   text-transform: uppercase;
   letter-spacing: 1px;
   overflow: hidden;
+  text-decoration: none;
   @include border-radius(4px);
   @include transition (all .3s linear);
 

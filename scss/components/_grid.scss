@@ -13,15 +13,11 @@
 /* Main Variables */
 $grid-width:   1200px;
 $grid-gutter:  $quarter-spacing-unit;
-
-/* 12 column options */
 $grid-start:   1;
 $grid-end:     12;
 
-/* Generic column options */
-$grid-generic: 25, 40, 60, 75;
 
-/* Lets keep shit simple. */
+/* Lets keep sh*t simple. */
 .grid {
   @extend %clearfix;
   max-width: $grid-width;
@@ -33,27 +29,40 @@ $grid-generic: 25, 40, 60, 75;
   }
 }
 
-/* 12 columns */
+.grid__col {
+    width: 100%;
+}
+
+
 @for $i from $grid-start through $grid-end {
-    .grid__col--#{$i} {
-        width: 100% / $i;
+  $no: xs;
+  .xs--#{$i} {
+    @include xs{
+      width: 100% / $i !important;
     }
-}
+  }
 
-/* Generic columns */
-@each $i in $grid-generic {
-    .grid__col--#{$i} {
-        width: percentage($i / 100);
-    }
-}
-
-/* Responsive columns */
-
-$grid-media-queries: ('xs', 'sm', 'md', 'lg', 'xl');
-@each $g-mq in $grid-media-queries {
+  .sm--#{$i} {
     @include sm {
-      .grid__#{$g-mq}--1 {
-          width: 100% !important;
-      }
+      width: 100% / $i !important;
     }
+  }
+
+  .md--#{$i} {
+    @include md {
+      width: 100% / $i !important;
+    }
+  }
+
+  .lg--#{$i} {
+    @include lg {
+      width: 100% / $i !important;
+    }
+  }
+
+  .xl--#{$i} {
+    @include xl {
+      width: 100% / $i !important;
+    }
+  }
 }

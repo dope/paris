@@ -5,40 +5,40 @@
 $xs:        30em;
 $sm:        40em;
 $md:        50em;
-$lg:        68.750em;
-$xl:        80em;
+$lg:        64em;
+$xl:        $lg + 1;
 
 // Usage: @include xs { // content }
 @mixin xs {
-  @media (max-width: $xs) {
+  @media (min-width: $xs) and (max-width: $sm) {
     @content;
   }
 }
 
 // Usage: @include sm { // content }
 @mixin sm {
-  @media (min-width: $xs) and (max-width: $sm) {
+  @media (min-width: $sm) and (max-width: $md) {
     @content;
   }
 }
 
 // Usage: @include md { // content }
 @mixin md {
-  @media (min-width: $sm) and (max-width: $md) {
+  @media (min-width: $md) and (max-width: $lg) {
     @content;
   }
 }
 
 // Usage: @include lg { // content }
 @mixin lg {
-  @media (min-width: $md) and (max-width: $lg) {
+  @media (min-width: $lg) and (max-width: $xl) {
     @content;
   }
 }
 
 // Usage: @include xl { // content }
 @mixin xl {
-  @media (min-width: $md) and (max-width: $xl) {
+  @media (min-width: $xl) {
     @content;
   }
 }

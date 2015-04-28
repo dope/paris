@@ -7,7 +7,7 @@ var plumber      = require('gulp-plumber');
 
 // create sass tasks
 gulp.task('sass', function() {
-  return sass('scss/paris.scss', { style: 'compressed' })
+  return sass('scss/paris.scss', { style: 'compact' })
   .on('error', function (err) {
     console.error('Error!', err.message);
   })
