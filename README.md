@@ -7,7 +7,7 @@ Paris is a CSS framework made to easily style web applications, backend systems 
 Firstly you're going to want to download Paris — You can achieve this by one of the three options below:
 - `bower install paris`
 - `git clone http://github.com/dope/paris`
-- [Download .zip](#)
+- [Download .zip](https://github.com/dope/paris/archive/master.zip)
 
 Once you have downloaded you're going to want to run a `npm install` to install the dependencies. Once you've installed the node modules you can now run `gulp` which will open the project up in your browser.
 
@@ -15,7 +15,6 @@ For the main documentation please visit: [docs.pariscss.com](#)
 
 ### Support
 - [@joericho](http://twitter.com/joericho)
-- [@quagliero](http://twitter.com/quagliero)
 - [Open an issue](https://github.com/dope/paris/issues/new)
 
 ### License
@@ -23,7 +22,7 @@ For the main documentation please visit: [docs.pariscss.com](#)
 ```
 The MIT License (MIT)
 
-Copyright (c) 2014 Joe Richardson and Tobias Harison-Denby
+Copyright (c) 2014 Joe Richardson
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
