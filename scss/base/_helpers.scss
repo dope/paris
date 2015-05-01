@@ -13,6 +13,10 @@
 /*=============================================
 =                   Margin                    =
 =============================================*/
+.m0 {
+  margin: 0 !important;
+}
+
 .m {
   margin: $half-spacing-unit !important;
 }
@@ -81,6 +85,10 @@
 /*=============================================
 =                   Padding                   =
 =============================================*/
+.p0 {
+  padding: 0 !important;
+}
+
 .p {
   padding: $half-spacing-unit !important;
 }
@@ -156,6 +164,11 @@
 // float right
 .fr {
   float: right !important;
+}
+
+// float none
+.fn {
+  float: none;
 }
 
 // float center
@@ -268,4 +281,101 @@
 
 .h6 {
   font-size: $h6-font-size !important;
+}
+
+/*=============================================
+=                Positions                    =
+=============================================*/
+// position static
+.ps {
+  position: static;
+}
+
+// position relative
+.pr {
+  position: relative;
+}
+
+// position absolute
+.pa {
+  position: absolute;
+}
+
+// position fixed
+.pf {
+  position: fixed;
+}
+
+/*=============================================
+=                Transitions                  =
+=============================================*/
+// ease
+.ease--slow {
+  transition: all .6s ease;
+}
+
+.ease--medium {
+  transition: all .4s ease;
+}
+
+.ease--fast {
+  transition: all .2s ease;
+}
+
+// linear
+.linear--slow {
+  transition: all .6s linear;
+}
+
+.linear--medium {
+  transition: all .4s linear;
+}
+
+.linear--fast {
+  transition: all .2s linear;
+}
+
+/*=============================================
+=             Device show and hide            =
+=============================================*/
+// mobile show
+.mobile--show {
+  @include xs {
+    display: block;
+  }
+}
+
+// mobile hide
+.mobile--hide {
+  @include xs {
+    display: none;
+  }
+}
+
+// tablet show
+.tablet--show {
+  @include md {
+    display: block;
+  }
+}
+
+// tablet hide
+.tablet--hide {
+  @include md {
+    display: none;
+  }
+}
+
+// desktop show
+.desktop--show {
+  @include lg {
+    display: block;
+  }
+}
+
+// desktop hide
+.desktop--hide {
+  @include lg {
+    display: none;
+  }
 }

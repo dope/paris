@@ -12,15 +12,6 @@
 */
 /* Mixins */
 /* Main Variables */
-/* Usage:
-----------------------------------
-@include keyframes(slide) { 0% { opacity: 0; }
- 100% { opacity: 1; }
-}
-
-@include animation('slide 5s 1');
-----------------------------------
-*/
 .clearfix:after, .grid:after { content: ""; display: table; clear: both; }
 
 /* Base */
@@ -215,7 +206,7 @@ a--brand:hover, .link--brand:hover { color: #446CB3; }
 .form__input::-moz-placeholder { color: #b3b3b3; }
 .form__input::-webkit-input-placeholder { color: #b3b3b3; }
 .form__input:focus { border-color: #bfbfbf; }
-.form__checkbox { position: relative; -webkit-appearance: none; margin-right: 20px; display: inline-block; vertical-align: middle; }
+.form__checkbox { position: relative; margin-right: 20px; display: inline-block; vertical-align: middle; }
 .form__checkbox:after { position: absolute; top: -5px; left: 0; right: 0; bottom: 0; margin: auto; width: 16px; height: 16px; background: white; border: 1px solid #d9d9d9; border-radius: 3px; content: ""; cursor: pointer; }
 .form__checkbox:checked:after { position: absolute; top: -5px; left: 0; right: 0; bottom: 0; margin: auto; width: 16px; height: 16px; background: #d9d9d9; content: ""; cursor: pointer; }
 .form__textarea { display: block; width: 100%; background: white; color: black; border-color: #e9e9e9; font-family: "Raleway", Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 1em; font-weight: 500; color: black; border-width: 1px; border-style: solid; resize: vertical; min-height: 8em; padding: 1em 0.8em; }
@@ -254,8 +245,7 @@ a--brand:hover, .link--brand:hover { color: #446CB3; }
 /* Info Button */
 /* Error Button */
 /* Warning Button */
-.btn { /* Usage: <button class="btn">Hello World</button> */ position: relative; z-index: 1; background: #696969; color: white; font-family: "Raleway", Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 0.7em; font-weight: 500; border: none; padding: 1.1em 1.7em; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; overflow: hidden; text-decoration: none; border-radius: 4px; background-clip: padding-box; transition: all 0.3s linear; /* Usage: <button class="btn btn--black">Hello World</button> */ /* Usage: <button class="btn btn--white">Hello World</button> */ /* Usage: <button class="btn btn--blue">Hello World</button> */ /* Usage: <button class="btn btn--green">Hello World</button> */ /* Usage: <button class="btn btn--red">Hello World</button> */ /* Usage: <button class="btn btn--red">Hello World</button> */ /* Usage: <button class="btn btn--yellow">Hello World</button> */ /* Usage: <button class="btn btn--purple">Hello World</button> */ /* Usage: <button class="btn btn--success">Hello World</button> */ /* Usage: <button class="btn btn--info">Hello World</button> */ /* Usage: <button class="btn btn--error">Hello World</button> */ /* Usage: <button class="btn btn--warning">Hello World</button> */ /* Different styles */ /* Usage: <button class="btn btn--rounded">Hi</button> */ /* Usage: <button class="btn btn--cornered">Hi</button> */ /* Usage: <button class="btn btn--scale">Hi</button> */     /* Usage: <button class="btn btn--block">Hi</button> &--block { display: block; width: 100%; }
- /* Usage: <button class="btn btn--xs">Hi</button> */ /* Usage: <button class="btn btn--sm">Hi</button> */ /* Usage: <button class="btn btn--md">Hi</button> */ /* Usage: <button class="btn btn--lg">Hi</button> */ /* Usage: <button class="btn btn--xl">Hi</button> */ }
+.btn { /* Usage: <button class="btn">Hello World</button> */ position: relative; z-index: 1; background: #696969; color: white; font-family: "Raleway", Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 0.7em; font-weight: 500; border: none; padding: 1.1em 1.7em; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; overflow: hidden; text-decoration: none; border-radius: 4px; background-clip: padding-box; transition: all 0.3s linear; /* Usage: <button class="btn btn--black">Hello World</button> */ /* Usage: <button class="btn btn--white">Hello World</button> */ /* Usage: <button class="btn btn--blue">Hello World</button> */ /* Usage: <button class="btn btn--green">Hello World</button> */ /* Usage: <button class="btn btn--red">Hello World</button> */ /* Usage: <button class="btn btn--red">Hello World</button> */ /* Usage: <button class="btn btn--yellow">Hello World</button> */ /* Usage: <button class="btn btn--purple">Hello World</button> */ /* Usage: <button class="btn btn--success">Hello World</button> */ /* Usage: <button class="btn btn--info">Hello World</button> */ /* Usage: <button class="btn btn--error">Hello World</button> */ /* Usage: <button class="btn btn--warning">Hello World</button> */ /* Different styles */ /* Usage: <button class="btn btn--rounded">Hi</button> */ /* Usage: <button class="btn btn--cornered">Hi</button> */ /* Usage: <button class="btn btn--scale">Hi</button> */ /* Usage: <button class="btn btn--block">Hi</button>*/ /* Usage: <button class="btn btn--xs">Hi</button> */ /* Usage: <button class="btn btn--sm">Hi</button> */ /* Usage: <button class="btn btn--md">Hi</button> */ /* Usage: <button class="btn btn--lg">Hi</button> */ /* Usage: <button class="btn btn--xl">Hi</button> */ }
 .btn:hover { background: #4f4f4f; }
 .btn:active { background: #434343; }
 .btn--black { background: black; color: white; box-shadow: 0px 2px 0px #262626; }
@@ -297,6 +287,7 @@ a--brand:hover, .link--brand:hover { color: #446CB3; }
 .btn--rounded { border-radius: 100px; background-clip: padding-box; }
 .btn--cornered { border-radius: 6px; background-clip: padding-box; }
 .btn--scale:hover { -webkit-transform: scale(1.03); -ms-transform: scale(1.03); transform: scale(1.03); }
+.btn--block { display: block; width: 100%; }
 .btn--xs { padding: 0.7em 0.6em; }
 .btn--sm { padding: 1em 1em; }
 .btn--md { padding: 1.2em 1.5em; }
@@ -351,6 +342,8 @@ img--cornered, .img--cornered { border-radius: 10px; background-clip: padding-bo
 /*=============================================
 =                   Margin                    =
 =============================================*/
+.m0 { margin: 0 !important; }
+
 .m { margin: 17px !important; }
 
 .m\+ { margin: 34px !important; }
@@ -384,6 +377,8 @@ img--cornered, .img--cornered { border-radius: 10px; background-clip: padding-bo
 /*=============================================
 =                   Padding                   =
 =============================================*/
+.p0 { padding: 0 !important; }
+
 .p { padding: 17px !important; }
 
 .p\+ { padding: 34px !important; }
@@ -420,6 +415,8 @@ img--cornered, .img--cornered { border-radius: 10px; background-clip: padding-bo
 .fl { float: left !important; }
 
 .fr { float: right !important; }
+
+.fn { float: none; }
 
 .fc { width: auto !important; display: table !important; margin-right: auto !important; margin-left: auto !important; }
 
@@ -480,6 +477,47 @@ img--cornered, .img--cornered { border-radius: 10px; background-clip: padding-bo
 
 .h6 { font-size: 0.9em !important; }
 
+/*=============================================
+=                Positions                    =
+=============================================*/
+.ps { position: static; }
+
+.pr { position: relative; }
+
+.pa { position: absolute; }
+
+.pf { position: fixed; }
+
+/*=============================================
+=                Transitions                  =
+=============================================*/
+.ease--slow { transition: all .6s ease; }
+
+.ease--medium { transition: all .4s ease; }
+
+.ease--fast { transition: all .2s ease; }
+
+.linear--slow { transition: all .6s linear; }
+
+.linear--medium { transition: all .4s linear; }
+
+.linear--fast { transition: all .2s linear; }
+
+/*=============================================
+=             Device show and hide            =
+=============================================*/
+@media (min-width: 30em) and (max-width: 40em) { .mobile--show { display: block; } }
+
+@media (min-width: 30em) and (max-width: 40em) { .mobile--hide { display: none; } }
+
+@media (min-width: 50em) and (max-width: 64em) { .tablet--show { display: block; } }
+
+@media (min-width: 50em) and (max-width: 64em) { .tablet--hide { display: none; } }
+
+@media (min-width: 64em) and (max-width: 65em) { .desktop--show { display: block; } }
+
+@media (min-width: 64em) and (max-width: 65em) { .desktop--hide { display: none; } }
+
 /* Components */
 /*
 *
@@ -514,10 +552,11 @@ img--cornered, .img--cornered { border-radius: 10px; background-clip: padding-bo
 */
 /* Main Variables */
 /* Lets keep sh*t simple. */
-.grid { max-width: 1200px; margin: 0 auto; }
+.grid { max-width: 1200px; margin: 0 auto; /* Grid columns with no padding */ }
+.grid--flush .grid__col { padding: 0 !important; }
 .grid__col { float: left; padding: 8.5px; }
 
-.grid__col { width: 100%; }
+.grid__col { width: auto; }
 
 @media (min-width: 30em) and (max-width: 40em) { .xs--1 { width: 100% !important; } }
 

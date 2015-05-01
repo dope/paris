@@ -23,6 +23,13 @@ $grid-end:     12;
   max-width: $grid-width;
   margin: 0 auto;
 
+  /* Grid columns with no padding */
+  &--flush {
+    .grid__col {
+      padding: 0 !important;
+    }
+  }
+
   &__col {
     float: left;
     padding: $grid-gutter;
@@ -30,7 +37,7 @@ $grid-end:     12;
 }
 
 .grid__col {
-    width: 100%;
+    width: auto;
 }
 
 

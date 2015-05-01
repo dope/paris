@@ -78,10 +78,11 @@ $label-font-weight:             500;
   /* Usage: <input type="checkbox" class="form__checkbox"> */
   &__checkbox {
     position: relative;
-    -webkit-appearance: none;
+    // -webkit-appearance: none;
     margin-right: 20px;
     display: inline-block;
     vertical-align: middle;
+
     &:after {
       position: absolute;
       top: -5px;

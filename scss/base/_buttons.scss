@@ -305,34 +305,34 @@ $btn-warning-color:             $color-white;
     }
   }
 
-    /* Usage: <button class="btn btn--block">Hi</button>
-    &--block {
-        display: block;
-        width: 100%;
-    }
-
-    /* Usage: <button class="btn btn--xs">Hi</button> */
-    &--xs {
-      padding: 0.7em 0.6em;
-    }
-
-    /* Usage: <button class="btn btn--sm">Hi</button> */
-    &--sm {
-      padding: 1em 1em;
-    }
-
-    /* Usage: <button class="btn btn--md">Hi</button> */
-    &--md {
-      padding: 1.2em 1.5em;
-    }
-
-    /* Usage: <button class="btn btn--lg">Hi</button> */
-    &--lg {
-      padding: 1.3em 2.5em;
-    }
-
-    /* Usage: <button class="btn btn--xl">Hi</button> */
-    &--xl {
-      padding: 1.5em 3em;
-    }
+  /* Usage: <button class="btn btn--block">Hi</button>*/
+  &--block {
+    display: block;
+    width: 100%;
   }
+
+  /* Usage: <button class="btn btn--xs">Hi</button> */
+  &--xs {
+    padding: 0.7em 0.6em;
+  }
+
+  /* Usage: <button class="btn btn--sm">Hi</button> */
+  &--sm {
+    padding: 1em 1em;
+  }
+
+  /* Usage: <button class="btn btn--md">Hi</button> */
+  &--md {
+    padding: 1.2em 1.5em;
+  }
+
+  /* Usage: <button class="btn btn--lg">Hi</button> */
+  &--lg {
+    padding: 1.3em 2.5em;
+  }
+
+  /* Usage: <button class="btn btn--xl">Hi</button> */
+  &--xl {
+    padding: 1.5em 3em;
+  }
+}

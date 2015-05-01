@@ -26,13 +26,16 @@ Image styles:
 Helpers:
 - [x] Color classes
 - [x] Font size classes
-- [ ] Animations
-- [ ] Transitions
+- [x] Transitions
 - [x] Margin
 - [x] Padding
 - [x] Floats
 - [x] Text aligns
-- [ ] Positions
+- [x] Positions
 - [x] Displays
 - [x] Vertical Aligns
-- [ ] Devices show and hide
+- [x] Devices show and hide
+
+# To make
+- [ ] Landing page
+- [ ] Iconset for UI components
