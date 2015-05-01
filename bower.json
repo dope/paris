@@ -2,6 +2,7 @@
     "name": "paris",
     "version": "0.1",
     "author": "Joe Richardson",
+    "main": "css/paris.css",
     "ignore": [
         "bower.json"
     ]
