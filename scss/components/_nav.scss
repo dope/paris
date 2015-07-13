@@ -1,0 +1,79 @@
+$nav-color: $color-purple;
+
+.nav {
+  background: $nav-color;
+
+  &__logo {
+    width: 20%;
+    float: left;
+    margin: 0;
+    padding: 8px 0 0 20px;
+    color: $color-white;
+    font-size: 1.3rem;
+
+    a {
+      color: $color-white;
+      text-decoration: none;
+    }
+
+    @include sm {
+      padding: 10px 20px;
+    }
+
+    @include xs {
+      padding: 10px 20px;
+    }
+  }
+
+  &__wrapper {
+    width: 80%;
+    float: right;
+    text-align: right;
+
+    @include sm {
+      // display: none;
+      width: 100%;
+      text-align: center;
+      background: darken($nav-color, 5%);
+    }
+
+    @include xs {
+      // display: none;
+      width: 100%;
+      text-align: center;
+      background: darken($nav-color, 5%);
+    }
+  }
+
+ &__list {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+    @include xs {
+      display: block;
+    }
+  }
+
+  &__link {
+    display: block;
+    font-size: $base-font-size;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: lighten($nav-color, 25%);
+    @include transition(color .3s ease);
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+
+  /* Trigger */
+  &__trigger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    background: $color-green;
+  }
+}

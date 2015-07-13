@@ -10,7 +10,7 @@ $xl:        $lg + 1;
 
 // Usage: @include xs { // content }
 @mixin xs {
-  @media (min-width: $xs) and (max-width: $sm) {
+  @media screen and (max-width: $sm) {
     @content;
   }
 }
