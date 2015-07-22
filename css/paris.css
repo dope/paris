@@ -698,16 +698,23 @@ img--cornered, .img--cornered { border-radius: 10px; background-clip: padding-bo
 .well--dark { background: #413d3d; }
 .well--dark > * { color: white; }
 
-.nav { background: #724E65; /* Trigger */ }
+.nav { background: #724E65; /* Trigger */ /* Trigger Lines */ /* Cross state for trigger */ }
 .nav__logo { width: 20%; float: left; margin: 0; padding: 8px 0 0 20px; color: white; font-size: 1.3rem; }
 .nav__logo a { color: white; text-decoration: none; }
-@media (min-width: 40em) and (max-width: 50em) { .nav__logo { padding: 10px 20px; } }
-@media screen and (max-width: 40em) { .nav__logo { padding: 10px 20px; } }
+@media (min-width: 40em) and (max-width: 50em) { .nav__logo { padding: 15px 20px; } }
+@media screen and (max-width: 40em) { .nav__logo { padding: 15px 20px; } }
 .nav__wrapper { width: 80%; float: right; text-align: right; }
-@media (min-width: 40em) and (max-width: 50em) { .nav__wrapper { width: 100%; text-align: center; background: #634458; } }
-@media screen and (max-width: 40em) { .nav__wrapper { width: 100%; text-align: center; background: #634458; } }
+@media (min-width: 40em) and (max-width: 50em) { .nav__wrapper { display: none; width: 100%; text-align: center; background: #634458; } }
+@media screen and (max-width: 40em) { .nav__wrapper { display: none; width: 100%; text-align: center; background: #634458; } }
 .nav__list { display: inline-block; vertical-align: middle; font-size: 0; }
 @media screen and (max-width: 40em) { .nav__list { display: block; } }
 .nav__link { display: block; font-size: 15px; text-decoration: none; padding: 10px 20px; color: #b28ea5; transition: color 0.3s ease; }
 .nav__link:hover { color: white; }
-.nav__trigger { position: absolute; top: 0; right: 0; width: 25px; height: 25px; background: #B8C45A; }
+.nav__trigger { position: absolute; top: 16px; right: 15px; width: 30px; height: 24px; appearance: none; border: 0; }
+.nav__hair { position: absolute; left: 0; right: 0; margin: auto; width: 100%; height: 2px; background: white; transition: 0.3s ease; }
+.nav__hair:nth-child(1) { top: 0; }
+.nav__hair:nth-child(2) { top: 0; bottom: 0; }
+.nav__hair:nth-child(3) { bottom: 0; }
+.nav__cross .nav__hair:nth-child(1) { bottom: 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }
+.nav__cross .nav__hair:nth-child(2) { width: 0; }
+.nav__cross .nav__hair:nth-child(3) { top: 0; -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); }

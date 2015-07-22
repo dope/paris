@@ -2,7 +2,6 @@ $nav-color: $color-purple;
 
 .nav {
   background: $nav-color;
-
   &__logo {
     width: 20%;
     float: left;
@@ -17,11 +16,11 @@ $nav-color: $color-purple;
     }
 
     @include sm {
-      padding: 10px 20px;
+      padding: 15px 20px;
     }
 
     @include xs {
-      padding: 10px 20px;
+      padding: 15px 20px;
     }
   }
 
@@ -31,14 +30,14 @@ $nav-color: $color-purple;
     text-align: right;
 
     @include sm {
-      // display: none;
+      display: none;
       width: 100%;
       text-align: center;
       background: darken($nav-color, 5%);
     }
 
     @include xs {
-      // display: none;
+      display: none;
       width: 100%;
       text-align: center;
       background: darken($nav-color, 5%);
@@ -70,10 +69,55 @@ $nav-color: $color-purple;
   /* Trigger */
   &__trigger {
     position: absolute;
-    top: 0;
+    top: 16px;
+    right: 15px;
+    width: 30px;
+    height: 24px;
+    appearance: none;
+    border: 0;
+  }
+
+  /* Trigger Lines */
+  &__hair {
+    position: absolute;
+    left: 0;
     right: 0;
-    width: 25px;
-    height: 25px;
-    background: $color-green;
+    margin: auto;
+    width: 100%;
+    height: 2px;
+    background: $color-white;
+    @include transition(.3s ease);
+
+    &:nth-child(1) {
+      top: 0;
+    }
+
+    &:nth-child(2) {
+      top: 0;
+      bottom: 0;
+    }
+
+    &:nth-child(3) {
+      bottom: 0;
+    }
+  }
+
+  /* Cross state for trigger */
+  &__cross {
+    .nav__hair {
+      &:nth-child(1) {
+        bottom: 0;
+        transform: rotate(45deg);
+      }
+
+      &:nth-child(2) {
+        width: 0;
+      }
+
+      &:nth-child(3) {
+        top: 0;
+        transform: rotate(-45deg);
+      }
+    }
   }
 }

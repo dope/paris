@@ -4,6 +4,8 @@ var sass         = require('gulp-ruby-sass');
 var browserSync  = require('browser-sync');
 var prefix       = require('gulp-autoprefixer');
 var plumber      = require('gulp-plumber');
+var concat       = require('gulp-concat');
+var uglify       = require('gulp-uglify');
 
 // create sass tasks
 gulp.task('sass', function() {
@@ -25,7 +27,16 @@ gulp.task('browser-sync', function() {
   });
 });
 
+// concat js files
+gulp.task('scripts', function() {
+  return gulp.src('js/*.js')
+    .pipe(uglify())
+    .pipe(concat('paris.min.js'))
+    .pipe(gulp.dest('js/min/'));
+});
+
 // default task (just run gulp)
-gulp.task('default', ['sass', 'browser-sync'], function () {
+gulp.task('default', ['sass', 'browser-sync', 'scripts'], function () {
   gulp.watch('scss/**/*.scss', ['sass']);
+  gulp.watch('js/*.js', ['scripts']);
 });
