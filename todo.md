@@ -12,9 +12,8 @@ Forms:
 - [x] Horizontal Rules
 
 Navigations:
-- [ ] Fixed Navigation
-- [ ] Full width Navigation
-- [ ] 90% wide Navigation
+- [x] Fixed Navigation
+- [x] Full width Navigation
 
 Footers:
 - [ ] Sticky Footer

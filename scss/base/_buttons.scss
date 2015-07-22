@@ -72,7 +72,7 @@ $btn-warning-color:             $color-white;
 .btn {
   /* Usage: <button class="btn">Hello World</button> */
   position: relative;
-  z-index: 1;
+  z-index: 0;
   background: $btn-default-background;
   color: $btn-default-color;
   font-family: $btn-default-text;

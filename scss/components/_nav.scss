@@ -2,6 +2,16 @@ $nav-color: $color-purple;
 
 .nav {
   background: $nav-color;
+
+  // fixed navigation
+  &--fixed {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
   &__logo {
     width: 20%;
     float: left;
@@ -28,6 +38,18 @@ $nav-color: $color-purple;
     width: 80%;
     float: right;
     text-align: right;
+
+    @include xl {
+      display: block !important;
+    }
+
+    @include lg {
+      display: block !important;
+    }
+
+    @include md {
+      display: block !important;
+    }
 
     @include sm {
       display: none;
@@ -75,6 +97,17 @@ $nav-color: $color-purple;
     height: 24px;
     appearance: none;
     border: 0;
+    background: $nav-color;
+    cursor: pointer;
+    display: none;
+
+    @include sm {
+      display: block;
+    }
+
+    @include xs {
+      display: block;
+    }
   }
 
   /* Trigger Lines */
