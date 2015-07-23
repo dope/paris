@@ -1,5 +1,8 @@
 $nav-color: $color-purple;
 
+/* Fixed options */
+$nav-fixed-width: 90%;
+
 .nav {
   background: $nav-color;
 
@@ -9,7 +12,9 @@ $nav-color: $color-purple;
     z-index: 1;
     top: 0;
     left: 0;
-    width: 100%;
+    right: 0;
+    margin: auto;
+    width: $nav-fixed-width;
   }
 
   &__logo {

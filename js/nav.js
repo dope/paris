@@ -2,6 +2,10 @@
 
   'use strict';
 
+  /**
+   * NAVIGATION
+   * Toggles navigation on mobile and tablet
+   */
   var $navTrigger   = $('.js-nav-trigger');
   var menu          = '.js-nav';
   var toggleTrigger = 'nav__cross';
