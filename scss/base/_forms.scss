@@ -38,6 +38,8 @@ $dropdown-text-color:           $color-black;
 $dropdown-font-family:          $base-font-family;
 $dropdown-font-size:            1em;
 $dropdown-font-weight:          500;
+
+// Do I add an images folder? Maybe.
 $dropdown-img:                  'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABmJLR0QA/wD/AP+gvaeTAAAFfklEQVR4nO3dTWgcZRzH8e9/EnUj+HIoiAcPAV+yQSjiy0XxVKE5VHYSc9KD9lA8aMFLlQY0RqVgL60UC7V4Fmt2J5YexLd4EhQ0HuqOUCmCIFTNQVAP2d3Hgxupta2b3Wdmnpn8Pued/zzs75dnhn0LiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiEhYLK8T7du375oLFy7siqJoj3PuNudczcx+M7O1bre7vLKy8m1eawlRHMc7nXNzZna3c+6GKIr+BH4ws5Uoij49depUN4vz5lKARqPxRBRFS865yas87EwURc8vLy+fzWNNoZibm7un2+2+bma7rvKw75xzC0mSLPs+f6YFmJmZua5Wqx0HnhpoMWa/93q9vUmSvJvlukLRaDSeNLPjQG2Qx5vZsfX19edWV1c7vtYw5mvQpebn5yeiKHofmNvCYdea2WPT09Pr7Xb7i6zWFoI4jhfM7A1gfAuHPTAxMXH/5OTke+fOnfNyScikAPPz8xOdTmcFeGSIww3YXeUSxHG8ALw65OF3jI+P3+urBN4LMGL4mypbghHD3+StBNGIC7mUbWxsnGS08P+Z5Zw7EsfxXg+zghDH8X7gFU/jZmq12tFRh3jdAWZnZ58FDngcacCeer3+Y5qmX3ucm7t++Efwe+N9X71eP5+m6TfDDvC2mEajcbOZnQdu9jXzIs45tz9JkmMZzM6cp23/Sn7qdDq3nz59+o9hDvZ2CTCzWbIJvz/ejpbxcuB527+cW8fGxmaGPdjnPcBuj7MuJwLeKlMJMtr2/8PMhn7ufRbgTo+zriQCTjYajWdyONdI+tv+UfJ5tfWuYQ/0WYCbPM66muAvBzls+5ca+tLrrQDOuV98zRpAsDtBzn/5m34e9kCfO0Db46xBBLcTFPCXD4CZDf1OqrcCRFF0xtesrZyWQG4M87rhuxzn3NDPvbcC7Nixowl872veFhR+OSho29+01mq1Phj2YG8FOHHixIaZLfiat0WFXQ6K2vb7es65g4AbdoDXl4Lb7fbZ6enp64EHfc4dUO4vGxe57QM4515MkuTtUWZ4fzew3W5/VK/Xa8BDvmcPwIBHp6amfk3TNNN3Efvb/mEKCh9YSpJkadQhmXweIE3Tj4ssgZnNZFmCjF/bH8RSq9V6ycegzD4RVNUSVCl8yLAAUL0SVC18yLgAUJ0SVDF8yKEAUP4SVDV8yKkAUN4SVDl8yLEAUL4SVD18yLkAUJ4SFB2+mb3carUWsz5P7gWA8EsQQvjNZnMxj3MVUgAItwTbKXwosAAQXglmZ2cPAq8VsJbNBeUaPhT3Ova/xHF8CHihoNM759z+KIpudM5tq/AhkAIAFsfxm8DTBZ2/x9/PRVHPx+FWq+XzCzUDK/QScLE0Tc8U/C5iIeH37/aL+hxFOAWAwu8JclfUtn+xoAoA26cEIYQPARYAql+CUMKHQAsA1S1BSOFDwAWA6pUgtPAh8AJAdUoQYvhQggJA+UsQavhQkgJAeUsQcvhQogJA+UoQevhQsgJAeUpQhvChhAWA8EtQlvChpAWAcEtQpvChxAWA8EpQtvCh5AWAcEpQxvChAgWA4ktQ1vChIgWA4kpQ5vChQgWA/EtQ9vChYgWA/EpQhfChggWA7EtQlfChogWA7EpQpfChwgUA/yWoWvhQ8QKAvxJUMXzYBgWA0UtQ1fBhmxQAIE3TT6amppyZPczg3wHomNmBZrN5KMu1FWnbFAAgTdPP6vX658BO4Jb/efiXvV7v8SRJ3slhaYUJ5athuVpcXIzW1tZ29f9b507n3OYvpnajKPoK+LDZbK4ywi9wioiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiI+PUXCSl69x/MMJgAAAAASUVORK5CYII=';
 
 /* Labels */
@@ -67,7 +69,7 @@ $label-font-weight:             500;
     width: 100%;
 
     @include placeholder {
-      color: lighten($color-black, 70%);
+      color: darken($input-border, 5%);
     }
 
     &:focus {
@@ -122,13 +124,13 @@ $label-font-weight:             500;
     width: 100%;
     background: $textarea-bg;
     color: $textarea-text-color;
-    border-color: $textarea-border;
     font-family: $textarea-font-family;
     font-size: $textarea-font-size;
     font-weight: $textarea-font-weight;
     color: $textarea-text-color;
     border-width: 1px;
     border-style: solid;
+    border-color: $textarea-border;
     resize: vertical;
     min-height: 8em;
     padding: 1em 0.8em;
@@ -138,7 +140,7 @@ $label-font-weight:             500;
     }
 
     &:focus {
-      border-color: lighten($color-black, 75%);
+      border-color: darken($textarea-border, 5%);
     }
   }
 
@@ -170,7 +172,6 @@ $label-font-weight:             500;
     background-repeat: no-repeat;
     background-position: right 15px top 17px;
     background-size: 15px;
-    border-color: $dropdown-border;
     padding: 1em 0.8em;
     min-width: 15em;
     font-family: $dropdown-font-family;
@@ -178,7 +179,7 @@ $label-font-weight:             500;
     font-weight: $dropdown-font-weight;
 
     &:focus {
-      border-color: lighten($color-black, 75%);
+      border-color: lighten($color-black, 70%);
     }
   }
 }

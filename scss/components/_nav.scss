@@ -1,10 +1,10 @@
-$nav-color: $color-purple;
+$nav-background: $color-blue;
 
 /* Fixed options */
-$nav-fixed-width: 90%;
+$nav-fixed-width: 100%;
 
 .nav {
-  background: $nav-color;
+  background: $nav-background;
 
   // fixed navigation
   &--fixed {
@@ -60,18 +60,19 @@ $nav-fixed-width: 90%;
       display: none;
       width: 100%;
       text-align: center;
-      background: darken($nav-color, 5%);
+      background: darken($nav-background, 5%);
     }
 
     @include xs {
       display: none;
       width: 100%;
       text-align: center;
-      background: darken($nav-color, 5%);
+      background: darken($nav-background, 5%);
     }
   }
 
  &__list {
+    position: relative;
     display: inline-block;
     vertical-align: middle;
     font-size: 0;
@@ -85,8 +86,17 @@ $nav-fixed-width: 90%;
     font-size: $base-font-size;
     text-decoration: none;
     padding: 10px 20px;
-    color: lighten($nav-color, 25%);
+    color: lighten($nav-background, 25%);
     @include transition(color .3s ease);
+
+    &--childs {
+      &:hover {
+        + .nav__dropdown {
+          max-height: 600px;
+          opacity: 1;
+        }
+      }
+    }
 
     &:hover {
       color: $color-white;
@@ -96,13 +106,13 @@ $nav-fixed-width: 90%;
   /* Trigger */
   &__trigger {
     position: absolute;
-    top: 16px;
-    right: 15px;
-    width: 30px;
-    height: 24px;
+    top: 17px;
+    right: 20px;
+    width: 25px;
+    height: 20px;
     appearance: none;
     border: 0;
-    background: $nav-color;
+    background: $nav-background;
     cursor: pointer;
     display: none;
 
@@ -133,6 +143,7 @@ $nav-fixed-width: 90%;
     &:nth-child(2) {
       top: 0;
       bottom: 0;
+      @include transition(0);
     }
 
     &:nth-child(3) {
@@ -150,12 +161,44 @@ $nav-fixed-width: 90%;
 
       &:nth-child(2) {
         width: 0;
+        right: 0;
+        left: 0;
+        @include transition(0);
       }
 
       &:nth-child(3) {
         top: 0;
         transform: rotate(-45deg);
       }
+    }
+  }
+
+  // Dropdown
+  &__dropdown {
+    min-width: 200px;
+    position: absolute;
+    z-index: 1;
+    background: darken($nav-background, 5%);
+    left: 0;
+    text-align: left;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    @include transition (all .3s ease-in-out .4s);
+
+    @include xs {
+      position: relative;
+      background: darken($nav-background, 8%);
+      text-align: center;
+    }
+
+    &:hover {
+      opacity: 1;
+      max-height: 1000px;
+    }
+
+    .nav__list {
+      display: block;
     }
   }
 }
