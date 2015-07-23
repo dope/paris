@@ -10,6 +10,9 @@
  *
  */
 
+/* Vendors */
+@import '../bower_components/normalize-scss/normalize';
+
 /* Mixins */
 @import 'mixins/media-queries';
 @import 'mixins/transition';

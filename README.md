@@ -9,9 +9,13 @@ Firstly you're going to want to download Paris — You can achieve this by one o
 - `git clone http://github.com/dope/paris`
 - [Download .zip](https://github.com/dope/paris/archive/master.zip)
 
-Once you have downloaded you're going to want to run a `npm install` to install the dependencies. Once you've installed the node modules you can now run `gulp` which will open the project up in your browser.
+Next you need to build your assets by running
+```npm install```
+```bower install```
+```gulp```
 
-For the main documentation please visit: [docs.pariscss.com](#)
+
+For the main documentation please visit: [pariscss.com](http://pariscss.com)
 
 ### Support
 - [@joericho](http://twitter.com/joericho)
