@@ -17,7 +17,7 @@ Navigations:
 
 Footers:
 - [ ] Sticky Footer
-- [ ] 4 Column Footer
+- [x] 4 Column Footer
 
 Image styles:
 - [x] Rounded

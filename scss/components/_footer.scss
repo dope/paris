@@ -1,0 +1,51 @@
+/*
+*
+* Paris v0.1
+* Created by @joericho
+*
+* Licensed under MIT
+* -------------------
+* Global Footer
+* -------------------
+*
+*/
+
+/* Main variables */
+$footer-background: $color-blue;
+$footer-text-color: $color-white;
+$footer-padding: 2rem 0;
+
+.footer {
+    background: $footer-background;
+    padding: $footer-padding;
+
+    /* Target color for all elements */
+    &__address,
+    &__title,
+    &__list,
+    &__link {
+        color: $footer-text-color;
+    }
+
+    /* Set width for container */
+    &__wrapper {
+        max-width: $grid-width;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* Remove default list style */
+    &__col {
+        list-style: none;
+    }
+
+    /* Set link styles */
+    &__link {
+        text-decoration: none;
+        color: rgba($footer-text-color, 0.5);
+
+        &:hover {
+            color: $footer-text-color;
+        }
+    }
+}
