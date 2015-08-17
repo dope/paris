@@ -16,7 +16,7 @@ Navigations:
 - [x] Full width Navigation
 
 Footers:
-- [ ] Sticky Footer
+- [x] Sticky Footer
 - [x] 4 Column Footer
 
 Image styles:
