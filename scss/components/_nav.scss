@@ -55,31 +55,34 @@ $nav-fixed-width: 100%;
     width: 80%;
     float: right;
     text-align: right;
-
-    @include xl {
-      display: block !important;
-    }
-
-    @include lg {
-      display: block !important;
-    }
-
-    @include md {
-      display: block !important;
-    }
+    transition: max-height 0.3s ease-in-out;
 
     @include sm {
-      display: none;
+      max-height: 0;
+      overflow: hidden;
       width: 100%;
       text-align: center;
       background: darken($nav-background, 5%);
     }
 
     @include xs {
-      display: none;
+      max-height: 0;
+      overflow: hidden;
       width: 100%;
       text-align: center;
       background: darken($nav-background, 5%);
+    }
+
+    &--toggle {
+      transition: max-height 0.3s ease-in-out;
+
+      @include sm {
+        max-height: 500px;
+      }
+
+      @include xs {
+        max-height: 500px;
+      }
     }
   }
 
@@ -99,7 +102,7 @@ $nav-fixed-width: 100%;
     text-decoration: none;
     padding: 10px 20px;
     color: lighten($nav-background, 25%);
-    @include transition(color .3s ease);
+    transition: color .3s ease;
 
     &--childs {
       &:hover {
@@ -146,7 +149,7 @@ $nav-fixed-width: 100%;
     width: 100%;
     height: 2px;
     background: $color-white;
-    @include transition(.3s ease);
+    transition: .3s ease;
 
     &:nth-child(1) {
       top: 0;
@@ -155,7 +158,7 @@ $nav-fixed-width: 100%;
     &:nth-child(2) {
       top: 0;
       bottom: 0;
-      @include transition(0);
+      transition: 0;
     }
 
     &:nth-child(3) {
@@ -175,7 +178,7 @@ $nav-fixed-width: 100%;
         width: 0;
         right: 0;
         left: 0;
-        @include transition(0);
+        transition: 0;
       }
 
       &:nth-child(3) {
@@ -196,7 +199,7 @@ $nav-fixed-width: 100%;
     opacity: 0;
     max-height: 0;
     overflow: hidden;
-    @include transition (all .3s ease-in-out .4s);
+    transition: all .3s ease-in-out .4s;
 
     @include xs {
       position: relative;

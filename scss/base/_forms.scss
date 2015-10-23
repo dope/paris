@@ -77,47 +77,6 @@ $label-font-weight:             500;
     }
   }
 
-  /* Usage: <input type="checkbox" class="form__checkbox"> */
-  &__checkbox {
-    position: relative;
-    // -webkit-appearance: none;
-    margin-right: 20px;
-    display: inline-block;
-    vertical-align: middle;
-
-    &:after {
-      position: absolute;
-      top: -5px;
-      left: 0;
-      right:0;
-      bottom: 0;
-      margin: auto;
-      width: 16px;
-      height: 16px;
-      background: $color-white;
-      border: 1px solid darken($color-white, 15%);
-      border-radius: 3px;
-      content: "";
-      cursor: pointer;
-    }
-
-    &:checked {
-      &:after {
-        position: absolute;
-        top: -5px;
-        left: 0;
-        right:0;
-        bottom: 0;
-        margin: auto;
-        width: 16px;
-        height: 16px;
-        background: darken($color-white, 15%);
-        content: "";
-        cursor: pointer;
-      }
-    }
-  }
-
   /* Usage: <textarea class="form__textarea"></textarea> */
   &__textarea {
     display: block;
@@ -160,7 +119,7 @@ $label-font-weight:             500;
   }
 
   /* Usage: */
-  /* <select class="select"> */
+  /* <select class="form__select"> */
   /*      <option>Hello</option> */
   /* </select> */
   &__select {

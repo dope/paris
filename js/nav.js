@@ -1,18 +1,15 @@
-(function(window, document, $, undefined) {
+'use strict';
 
-  'use strict';
+/**
+ * NAVIGATION
+ * Toggles navigation on mobile and tablet
+ */
+var menuTrigger = document.querySelector('.js-nav-trigger');
+var menu        = document.querySelector('.js-nav');
 
-  /**
-   * NAVIGATION
-   * Toggles navigation on mobile and tablet
-   */
-  var $navTrigger   = $('.js-nav-trigger');
-  var menu          = '.js-nav';
-  var toggleTrigger = 'nav__cross';
+ function toggleMenu() {
+    menuTrigger.classList.toggle('nav__cross');
+    menu.classList.toggle('nav__wrapper--toggle');
+ }
 
-  $navTrigger.on('click', function() {
-    $(this).toggleClass(toggleTrigger);
-    $(menu).slideToggle();
-  });
-
-})(window, document, jQuery);
+ menuTrigger.addEventListener('click', toggleMenu);

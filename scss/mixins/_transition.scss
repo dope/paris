@@ -1,4 +1,0 @@
-// Usage:   @include transition(color .3s ease);
-@mixin transition($args...) {
-  transition: $args;
-}

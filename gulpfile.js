@@ -11,7 +11,7 @@ var jshint       = require('gulp-jshint');
 // create sass tasks
 gulp.task('sass', function() {
   gulp.src('scss/**/*.scss')
-    .pipe(sass({outputStyle: 'compressed'}))
+    .pipe(sass({outputStyle: 'compressed', errLogToConsole: true}))
     .pipe(prefix('last 2 versions', '> 1%', 'ie 8', 'Android 2', 'Firefox ESR'))
     .pipe(plumber())
     .pipe(gulp.dest('css'));

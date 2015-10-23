@@ -15,7 +15,6 @@
 
 /* Mixins */
 @import 'mixins/media-queries';
-@import 'mixins/transition';
 @import 'mixins/opacity';
 @import 'mixins/border-radius';
 @import 'mixins/placeholder';
@@ -25,13 +24,11 @@
 @import 'base/colors';
 @import 'base/spacing';
 @import 'base/typography';
-@import 'base/styles';
+@import 'base/main';
 @import 'base/links';
 @import 'base/forms';
-@import 'base/buttons';
 @import 'base/hr';
 @import 'base/images';
-@import 'base/helpers';
 
 /* Components */
 @import 'components/messages';
@@ -39,3 +36,7 @@
 @import 'components/well';
 @import 'components/nav';
 @import 'components/footer';
+@import 'components/buttons';
+
+/* Utilities */
+@import 'utils/helpers';

@@ -37,6 +37,15 @@ $footer-padding: 2rem 0;
     /* Remove default list style */
     &__col {
         list-style: none;
+
+        /* Make links inline */
+        &--inline {
+            .footer__list {
+                display: inline-block;
+                margin-top: 5px;
+                margin-right: $base-spacing-unit;
+            }
+        }
     }
 
     /* Set link styles */
@@ -51,7 +60,7 @@ $footer-padding: 2rem 0;
 
     /* Sticky footer */
     &--sticky {
-        padding: 1rem 0;
+        padding: 0.1rem 0;
         position: fixed;
         bottom: 0;
         left: 0;

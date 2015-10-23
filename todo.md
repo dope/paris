@@ -4,8 +4,6 @@ Forms:
 - [x] Inputs
 - [x] Textarea
 - [x] Drop down
-- [ ] Radio Button
-- [ ] Checkbox
 - [x] Buttons
 - [x] Grid System
 - [x] Messages
@@ -34,7 +32,3 @@ Helpers:
 - [x] Displays
 - [x] Vertical Aligns
 - [x] Devices show and hide
-
-# To make
-- [ ] Landing page
-- [ ] Iconset for UI components
