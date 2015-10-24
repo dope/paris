@@ -20,7 +20,7 @@ $base-weight-medium:            500;
 $base-weight-regular:           400;
 
 /* Base */
-$base-font-size:                15px;
+$base-font-size:                16px;
 $base-line-height:              1.5;
 $base-font-weight:              $base-weight-regular;
 $base-font-family:              "Varela";
@@ -44,15 +44,15 @@ $h4-font-size:                  1.4em;
 $h5-font-size:                  1em;
 $h6-font-size:                  0.9em;
 
-$h1-font-weight:                $base-weight-medium;
-$h2-font-weight:                $base-weight-medium;
-$h3-font-weight:                $base-weight-medium;
+$h1-font-weight:                $base-weight-semi;
+$h2-font-weight:                $base-weight-semi;
+$h3-font-weight:                $base-weight-semi;
 $h4-font-weight:                $base-weight-regular;
 $h5-font-weight:                $base-weight-regular;
 $h6-font-weight:                $base-weight-semi;
 
 /* Paragraphs */
-$text-color:                    $color-grey;
+$text-color:                    #555;
 $text-font-size:                $base-font-size;
 $text-spacing:                  2em;
 
