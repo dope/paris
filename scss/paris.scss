@@ -10,8 +10,6 @@
  *
  */
 
-/* Vendors */
-@import '../bower_components/normalize-scss/normalize';
 
 /* Mixins */
 @import 'mixins/media-queries';
@@ -27,9 +25,9 @@
 @import 'base/main';
 @import 'base/links';
 @import 'base/forms';
+@import 'base/fonts';
 @import 'base/hr';
 @import 'base/images';
-@import 'base/fonts';
 
 /* Components */
 @import 'components/messages';

@@ -57,13 +57,4 @@ $footer-padding: 2rem 0;
             color: $footer-text-color;
         }
     }
-
-    /* Sticky footer */
-    &--sticky {
-        padding: 0.1rem 0;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-    }
 }

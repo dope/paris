@@ -3,10 +3,6 @@
   "version": "0.0.1",
   "description": "Modern Framework",
   "main": "gulpfile.js",
-  "dependencies": {
-    "gulp": "^3.8.11",
-    "gulp-sass": "^2.0.4"
-  },
   "devDependencies": {
     "browser-sync": "*",
     "gulp": "*",
