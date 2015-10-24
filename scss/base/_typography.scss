@@ -12,11 +12,18 @@
 
 /* Main Variables */
 
+/* Base Font weights */
+$base-weight-heavy:             900;
+$base-weight-bold:              700;
+$base-weight-semi:              600;
+$base-weight-medium:            500;
+$base-weight-regular:           400;
+
 /* Base */
 $base-font-size:                15px;
 $base-line-height:              1.6;
-$base-font-weight:              400;
-$base-font-family:              "Raleway", Helvetica Neue, Helvetica, Arial, sans-serif;
+$base-font-weight:              $base-weight-regular;
+$base-font-family:              "Lato", Helvetica Neue, Helvetica, Arial, sans-serif;
 
 /* Links */
 $generic-link-color:            $color-black;
@@ -37,12 +44,12 @@ $h4-font-size:                  1.4em;
 $h5-font-size:                  1em;
 $h6-font-size:                  0.9em;
 
-$h1-font-weight:                500;
-$h2-font-weight:                500;
-$h3-font-weight:                500;
-$h4-font-weight:                300;
-$h5-font-weight:                400;
-$h6-font-weight:                600;
+$h1-font-weight:                $base-weight-medium;
+$h2-font-weight:                $base-weight-medium;
+$h3-font-weight:                $base-weight-medium;
+$h4-font-weight:                $base-weight-regular;
+$h5-font-weight:                $base-weight-regular;
+$h6-font-weight:                $base-weight-semi;
 
 /* Paragraphs */
 $text-color:                    $color-grey;
@@ -50,129 +57,129 @@ $text-font-size:                $base-font-size;
 $text-spacing:                  2em;
 
 h1 {
-  font-size: $h1-font-size;
-  font-family: $base-font-family;
-  font-weight: $h1-font-weight;
-  line-height: 1.4;
-  color: $h1-color;
-  margin-bottom: $base-spacing-unit / 6;
+    font-size: $h1-font-size;
+    font-family: $base-font-family;
+    font-weight: $h1-font-weight;
+    line-height: 1.4;
+    color: $h1-color;
+    margin-bottom: $base-spacing-unit / 6;
 
-  @include lg {
-    font-size: $h1-font-size / 1.1;
-  }
+    @include lg {
+        font-size: $h1-font-size / 1.1;
+    }
 
-  @include md {
-    font-size: $h1-font-size / 1.2;
-  }
+    @include md {
+        font-size: $h1-font-size / 1.2;
+    }
 
-  @include sm {
-    font-size: $h1-font-size / 1.3;
-  }
+    @include sm {
+        font-size: $h1-font-size / 1.3;
+    }
 
-  @include xs {
-    font-size: $h1-font-size / 1.4;
-    line-height: 1.3;
-  }
+    @include xs {
+        font-size: $h1-font-size / 1.4;
+        line-height: 1.3;
+    }
 }
 
 h2 {
-  font-size: $h2-font-size;
-  font-family: $base-font-family;
-  font-weight: $h2-font-weight;
-  color: $h2-color;
-  margin-bottom: $base-spacing-unit / 3;
+    font-size: $h2-font-size;
+    font-family: $base-font-family;
+    font-weight: $h2-font-weight;
+    color: $h2-color;
+    margin-bottom: $base-spacing-unit / 3;
 
-  @include lg {
-    font-size: $h1-font-size / 1.4;
-  }
+    @include lg {
+        font-size: $h1-font-size / 1.4;
+    }
 
-  @include md {
-    font-size: $h1-font-size / 1.5;
-  }
+    @include md {
+        font-size: $h1-font-size / 1.5;
+    }
 
-  @include sm {
-    font-size: $h1-font-size / 1.6;
-  }
+    @include sm {
+        font-size: $h1-font-size / 1.6;
+    }
 
-  @include xs {
-    font-size: $h1-font-size / 1.7;
-    line-height: 1.3;
-  }
+    @include xs {
+        font-size: $h1-font-size / 1.7;
+        line-height: 1.3;
+    }
 }
 
 h3 {
-  font-size: $h3-font-size;
-  font-family: $base-font-family;
-  font-weight: $h3-font-weight;
-  color: $h3-color;
-  margin-bottom: $base-spacing-unit / 9;
+    font-size: $h3-font-size;
+    font-family: $base-font-family;
+    font-weight: $h3-font-weight;
+    color: $h3-color;
+    margin-bottom: $base-spacing-unit / 9;
 
-  @include lg {
-    font-size: $h1-font-size / 1.7;
-  }
+    @include lg {
+        font-size: $h1-font-size / 1.7;
+    }
 
-  @include md {
-    font-size: $h1-font-size / 1.8;
-  }
+    @include md {
+        font-size: $h1-font-size / 1.8;
+    }
 
-  @include sm {
-    font-size: $h1-font-size / 1.9;
-  }
+    @include sm {
+        font-size: $h1-font-size / 1.9;
+    }
 
-  @include xs {
-    font-size: $h1-font-size / 2;
-    line-height: 1.3;
-  }
+    @include xs {
+        font-size: $h1-font-size / 2;
+        line-height: 1.3;
+    }
 }
 
 h4 {
-  font-size: $h4-font-size;
-  font-family: $base-font-family;
-  font-weight: $h4-font-weight;
-  color: $h4-color;
-  margin-bottom: $base-spacing-unit / 10;
+    font-size: $h4-font-size;
+    font-family: $base-font-family;
+    font-weight: $h4-font-weight;
+    color: $h4-color;
+    margin-bottom: $base-spacing-unit / 10;
 
-  @include lg {
-    font-size: $h1-font-size / 2;
-  }
+    @include lg {
+        font-size: $h1-font-size / 2;
+    }
 
-  @include md {
-    font-size: $h1-font-size / 2.1;
-  }
+    @include md {
+        font-size: $h1-font-size / 2.1;
+    }
 
-  @include sm {
-    font-size: $h1-font-size / 2.2;
-  }
+    @include sm {
+        font-size: $h1-font-size / 2.2;
+    }
 
-  @include xs {
-    font-size: $h1-font-size / 2.3;
-    line-height: 1.3;
-  }
+    @include xs {
+        font-size: $h1-font-size / 2.3;
+        line-height: 1.3;
+    }
 }
 
 h5 {
-  font-size: $h5-font-size;
-  font-family: $base-font-family;
-  font-weight: $h5-font-weight;
-  color: $h5-color;
-  margin-bottom: $base-spacing-unit / 11;
-  text-transform: uppercase;
+    font-size: $h5-font-size;
+    font-family: $base-font-family;
+    font-weight: $h5-font-weight;
+    color: $h5-color;
+    margin-bottom: $base-spacing-unit / 11;
+    text-transform: uppercase;
 }
 
 h6 {
-  font-size: $h6-font-size;
-  font-family: $base-font-family;
-  font-weight: $h6-font-weight;
-  color: $h6-color;
-  margin-bottom: $base-spacing-unit / 12;
-  text-transform: uppercase;
+    font-size: $h6-font-size;
+    font-family: $base-font-family;
+    font-weight: $h6-font-weight;
+    color: $h6-color;
+    margin-bottom: $base-spacing-unit / 12;
+    text-transform: uppercase;
 }
 
 p {
-  color: $text-color;
-  font-family: $base-font-family;
-  line-height: $base-line-height;
-  font-size: $base-font-size;
-  font-weight: $base-font-weight;
-  margin-bottom: $text-spacing;
+    color: $text-color;
+    font-family: $base-font-family;
+    line-height: $base-line-height;
+    font-size: $base-font-size;
+    font-weight: $base-font-weight;
+    margin-bottom: $text-spacing;
 }

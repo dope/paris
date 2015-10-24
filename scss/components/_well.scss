@@ -24,20 +24,20 @@ $well-dark-padding:             25px;
 
 /* Usage: <div class="well">Content here</div> */
 .well {
-  background: $well-default-color;
-  padding: $well-default-padding;
-  @include border-radius(5px);
-  margin: $base-spacing-unit auto;
+    background: $well-default-color;
+    padding: $well-default-padding;
+    @include border-radius(5px);
+    margin: $base-spacing-unit auto;
 
-  &--light {
-    background: $well-light-color;
-  }
-
-  &--dark {
-    background: $well-dark-color;
-    > * {
-      color: $color-white;
+    &--light {
+        background: $well-light-color;
     }
+
+    &--dark {
+        background: $well-dark-color;
+        > * {
+          color: $color-white;
+      }
   }
 }
 

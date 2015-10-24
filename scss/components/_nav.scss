@@ -16,204 +16,203 @@ $nav-background: $color-blue;
 $nav-fixed-width: 100%;
 
 .nav {
-  background: $nav-background;
-
-  // fixed navigation
-  &--fixed {
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: $nav-fixed-width;
-  }
-
-  &__logo {
-    width: 20%;
-    float: left;
-    margin: 0;
-    padding: 8px 0 0 20px;
-    color: $color-white;
-    font-size: 1.3rem;
-
-    a {
-      color: $color-white;
-      text-decoration: none;
-    }
-
-    @include sm {
-      padding: 15px 20px;
-    }
-
-    @include xs {
-      padding: 15px 20px;
-    }
-  }
-
-  &__wrapper {
-    width: 80%;
-    float: right;
-    text-align: right;
-    transition: max-height 0.3s ease-in-out;
-
-    @include sm {
-      max-height: 0;
-      overflow: hidden;
-      width: 100%;
-      text-align: center;
-      background: darken($nav-background, 5%);
-    }
-
-    @include xs {
-      max-height: 0;
-      overflow: hidden;
-      width: 100%;
-      text-align: center;
-      background: darken($nav-background, 5%);
-    }
-
-    &--toggle {
-      transition: max-height 0.3s ease-in-out;
-
-      @include sm {
-        max-height: 500px;
-      }
-
-      @include xs {
-        max-height: 500px;
-      }
-    }
-  }
-
- &__list {
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 0;
-    @include xs {
-      display: block;
-    }
-  }
-
-  &__link {
-    display: block;
-    font-size: $base-font-size;
-    text-decoration: none;
-    padding: 10px 20px;
-    color: lighten($nav-background, 25%);
-    transition: color .3s ease;
-
-    &--childs {
-      &:hover {
-        + .nav__dropdown {
-          max-height: 600px;
-          opacity: 1;
-        }
-      }
-    }
-
-    &:hover {
-      color: $color-white;
-    }
-  }
-
-  /* Trigger */
-  &__trigger {
-    position: absolute;
-    top: 17px;
-    right: 20px;
-    width: 25px;
-    height: 20px;
-    appearance: none;
-    border: 0;
     background: $nav-background;
-    cursor: pointer;
-    display: none;
 
-    @include sm {
-      display: block;
-    }
-
-    @include xs {
-      display: block;
-    }
-  }
-
-  /* Trigger Lines */
-  &__hair {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 100%;
-    height: 2px;
-    background: $color-white;
-    transition: .3s ease;
-
-    &:nth-child(1) {
-      top: 0;
-    }
-
-    &:nth-child(2) {
-      top: 0;
-      bottom: 0;
-      transition: 0;
-    }
-
-    &:nth-child(3) {
-      bottom: 0;
-    }
-  }
-
-  /* Cross state for trigger */
-  &__cross {
-    .nav__hair {
-      &:nth-child(1) {
-        bottom: 0;
-        transform: rotate(45deg);
-      }
-
-      &:nth-child(2) {
-        width: 0;
-        right: 0;
-        left: 0;
-        transition: 0;
-      }
-
-      &:nth-child(3) {
+    &--fixed {
+        position: fixed;
+        z-index: 1;
         top: 0;
-        transform: rotate(-45deg);
-      }
-    }
-  }
-
-  /* Dropdown */
-  &__dropdown {
-    min-width: 200px;
-    position: absolute;
-    z-index: 1;
-    background: darken($nav-background, 5%);
-    left: 0;
-    text-align: left;
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: all .3s ease-in-out .4s;
-
-    @include xs {
-      position: relative;
-      background: darken($nav-background, 8%);
-      text-align: center;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: $nav-fixed-width;
     }
 
-    &:hover {
-      opacity: 1;
-      max-height: 1000px;
+    &__logo {
+        width: 20%;
+        float: left;
+        margin: 0;
+        padding: 8px 0 0 20px;
+        color: $color-white;
+        font-size: 1.3rem;
+
+        a {
+            color: $color-white;
+            text-decoration: none;
+        }
+
+        @include sm {
+            padding: 15px 20px;
+        }
+
+        @include xs {
+            padding: 15px 20px;
+        }
     }
 
-    .nav__list {
-      display: block;
+    &__wrapper {
+        width: 80%;
+        float: right;
+        text-align: right;
+        transition: max-height 0.3s ease-in-out;
+
+        @include sm {
+            max-height: 0;
+            overflow: hidden;
+            width: 100%;
+            text-align: center;
+            background: darken($nav-background, 5%);
+        }
+
+        @include xs {
+            max-height: 0;
+            overflow: hidden;
+            width: 100%;
+            text-align: center;
+            background: darken($nav-background, 5%);
+        }
+
+        &--toggle {
+            transition: max-height 0.3s ease-in-out;
+
+            @include sm {
+                max-height: 500px;
+            }
+
+            @include xs {
+                max-height: 500px;
+            }
+        }
     }
-  }
+
+    &__list {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 0;
+        @include xs {
+            display: block;
+        }
+    }
+
+    &__link {
+        display: block;
+        font-size: $base-font-size;
+        text-decoration: none;
+        padding: 10px 20px;
+        color: lighten($nav-background, 25%);
+        transition: color .3s ease;
+
+        &--childs {
+            &:hover {
+                + .nav__dropdown {
+                    max-height: 600px;
+                    opacity: 1;
+                }
+            }
+        }
+
+        &:hover {
+            color: $color-white;
+        }
+    }
+
+    /* Trigger */
+    &__trigger {
+        position: absolute;
+        top: 17px;
+        right: 20px;
+        width: 25px;
+        height: 20px;
+        appearance: none;
+        border: 0;
+        background: $nav-background;
+        cursor: pointer;
+        display: none;
+
+        @include sm {
+            display: block;
+        }
+
+        @include xs {
+            display: block;
+        }
+    }
+
+    /* Trigger Lines */
+    &__hair {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 100%;
+        height: 2px;
+        background: $color-white;
+        transition: .3s ease;
+
+        &:nth-child(1) {
+            top: 0;
+        }
+
+        &:nth-child(2) {
+            top: 0;
+            bottom: 0;
+            transition: 0;
+        }
+
+        &:nth-child(3) {
+            bottom: 0;
+        }
+    }
+
+    /* Cross state for trigger */
+    &__cross {
+        .nav__hair {
+            &:nth-child(1) {
+                bottom: 0;
+                transform: rotate(45deg);
+            }
+
+            &:nth-child(2) {
+                width: 0;
+                right: 0;
+                left: 0;
+                transition: 0;
+            }
+
+            &:nth-child(3) {
+                top: 0;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    /* Dropdown */
+    &__dropdown {
+        min-width: 200px;
+        position: absolute;
+        z-index: 1;
+        background: darken($nav-background, 5%);
+        left: 0;
+        text-align: left;
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: all .3s ease-in-out .4s;
+
+        @include xs {
+            position: relative;
+            background: darken($nav-background, 8%);
+            text-align: center;
+        }
+
+        &:hover {
+            opacity: 1;
+            max-height: 1000px;
+        }
+
+        .nav__list {
+            display: block;
+        }
+    }
 }

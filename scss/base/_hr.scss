@@ -26,27 +26,27 @@ $hr-brand-color:                $color-accent;
 
 hr,
 .hr {
-  /* Usage: <hr class="hr"> */
-  height: $hr-default-height;
-  background: $hr-default-color;
-  border: 0;
-  margin: $base-spacing-unit 0;
+    /* Usage: <hr class="hr"> */
+    height: $hr-default-height;
+    background: $hr-default-color;
+    border: 0;
+    margin: $base-spacing-unit 0;
 
-  /* Usage: <hr class="hr hr--thick"> */
-  &--thick {
-    height: $hr-thick-height;
-    background: $hr-thick-color;
-  }
+    /* Usage: <hr class="hr hr--thick"> */
+    &--thick {
+        height: $hr-thick-height;
+        background: $hr-thick-color;
+    }
 
-  /* Usage: <hr class="hr hr--dark"> */
-  &--dark {
-    background: $hr-dark-color;
-    height: $hr-dark-height;
-  }
+    /* Usage: <hr class="hr hr--dark"> */
+    &--dark {
+        background: $hr-dark-color;
+        height: $hr-dark-height;
+    }
 
-  /* Usage: <hr class="hr hr--brand"> */
-  &--brand {
-    background: $hr-brand-color;
-    height: $hr-brand-height;
-  }
+    /* Usage: <hr class="hr hr--brand"> */
+    &--brand {
+        background: $hr-brand-color;
+        height: $hr-brand-height;
+    }
 }

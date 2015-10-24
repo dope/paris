@@ -19,21 +19,21 @@ $grid-end:     12;
 
 /* Lets keep sh*t simple. */
 .grid {
-  @extend %clearfix;
-  max-width: $grid-width;
-  margin: 0 auto;
+    @extend %clearfix;
+    max-width: $grid-width;
+    margin: 0 auto;
 
-  /* Grid columns with no padding */
-  &--flush {
-    .grid__col {
-      padding: 0 !important;
+    /* Grid columns with no padding */
+    &--flush {
+        .grid__col {
+            padding: 0 !important;
+        }
     }
-  }
 
-  &__col {
-    float: left;
-    padding: $grid-gutter;
-  }
+    &__col {
+        float: left;
+        padding: $grid-gutter;
+    }
 }
 
 .grid__col {
@@ -42,34 +42,34 @@ $grid-end:     12;
 
 
 @for $i from $grid-start through $grid-end {
-  $no: xs;
-  .xs--#{$i} {
-    @include xs{
-      width: 100% / $i !important;
+    $no: xs;
+    .xs--#{$i} {
+        @include xs{
+            width: 100% / $i !important;
+        }
     }
-  }
 
-  .sm--#{$i} {
-    @include sm {
-      width: 100% / $i !important;
+    .sm--#{$i} {
+        @include sm {
+            width: 100% / $i !important;
+        }
     }
-  }
 
-  .md--#{$i} {
-    @include md {
-      width: 100% / $i !important;
+    .md--#{$i} {
+        @include md {
+            width: 100% / $i !important;
+        }
     }
-  }
 
-  .lg--#{$i} {
-    @include lg {
-      width: 100% / $i !important;
+    .lg--#{$i} {
+        @include lg {
+            width: 100% / $i !important;
+        }
     }
-  }
 
-  .xl--#{$i} {
-    @include xl {
-      width: 100% / $i !important;
+    .xl--#{$i} {
+        @include xl {
+            width: 100% / $i !important;
+        }
     }
-  }
 }

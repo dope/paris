@@ -14,44 +14,44 @@
 
 /* Usage: <div class="msg">Hello World</div> */
 .msg {
-  margin-top: $half-spacing-unit;
-  margin-bottom: $half-spacing-unit;
-  padding: 1em;
-  border-left: 5px solid;
-  font-weight: 500;
+    margin-top: $half-spacing-unit;
+    margin-bottom: $half-spacing-unit;
+    padding: 1em;
+    border-left: 5px solid;
+    font-weight: $base-weight-medium;
 
-  /* Usage: <div class="msg msg--default">Hello World</div> */
-  &--default {
-    background: lighten($color-accent, 20%);
-    border-color: darken($color-accent, 10%);
-    color: darken($color-accent, 20%);
-  }
+    /* Usage: <div class="msg msg--default">Hello World</div> */
+    &--default {
+        background: lighten($color-accent, 20%);
+        border-color: darken($color-accent, 10%);
+        color: darken($color-accent, 20%);
+    }
 
-  /* Usage: <div class="msg msg--success">Hello World</div> */
-  &--success {
-    background: lighten($color-success, 20%);
-    border-color: darken($color-success, 10%);
-    color: darken($color-success, 20%);
-  }
+    /* Usage: <div class="msg msg--success">Hello World</div> */
+    &--success {
+        background: lighten($color-success, 20%);
+        border-color: darken($color-success, 10%);
+        color: darken($color-success, 20%);
+    }
 
-  /* Usage: <div class="msg msg--info">Hello World</div> */
-  &--info {
-    background: lighten($color-info, 20%);
-    border-color: darken($color-info, 10%);
-    color: darken($color-info, 20%);
-  }
+    /* Usage: <div class="msg msg--info">Hello World</div> */
+    &--info {
+        background: lighten($color-info, 20%);
+        border-color: darken($color-info, 10%);
+        color: darken($color-info, 20%);
+    }
 
-  /* Usage: <div class="msg msg--error">Hello World</div> */
-  &--error {
-    background: lighten($color-error, 20%);
-    border-color: darken($color-error, 10%);
-    color: darken($color-error, 20%);
-  }
+    /* Usage: <div class="msg msg--error">Hello World</div> */
+    &--error {
+        background: lighten($color-error, 20%);
+        border-color: darken($color-error, 10%);
+        color: darken($color-error, 20%);
+    }
 
-  /* Usage: <div class="msg msg--warning">Hello World</div> */
-  &--warning {
-    background: lighten($color-warning, 20%);
-    border-color: darken($color-warning, 10%);
-    color: darken($color-warning, 20%);
-  }
+    /* Usage: <div class="msg msg--warning">Hello World</div> */
+    &--warning {
+        background: lighten($color-warning, 20%);
+        border-color: darken($color-warning, 10%);
+        color: darken($color-warning, 20%);
+    }
 }
