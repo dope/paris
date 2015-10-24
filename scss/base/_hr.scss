@@ -15,12 +15,9 @@
 /* Sizes */
 $hr-default-height:             1px;
 $hr-thick-height:               5px;
-$hr-dark-height:                1px;
-$hr-brand-height:               1px;
 
 /* Colors */
 $hr-default-color:              lighten($color-black, 90%);
-$hr-thick-color:                lighten($color-black, 90%);
 $hr-dark-color:                 $color-black;
 $hr-brand-color:                $color-accent;
 
@@ -35,18 +32,15 @@ hr,
     /* Usage: <hr class="hr hr--thick"> */
     &--thick {
         height: $hr-thick-height;
-        background: $hr-thick-color;
     }
 
     /* Usage: <hr class="hr hr--dark"> */
     &--dark {
         background: $hr-dark-color;
-        height: $hr-dark-height;
     }
 
     /* Usage: <hr class="hr hr--brand"> */
     &--brand {
         background: $hr-brand-color;
-        height: $hr-brand-height;
     }
 }
