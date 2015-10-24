@@ -42,34 +42,33 @@ $grid-end:     12;
 
 
 @for $i from $grid-start through $grid-end {
-    $no: xs;
-    .xs--#{$i} {
+    .xs-#{$i} {
         @include xs{
-            width: 100% / $i !important;
+            width: percentage($i / 12);
         }
     }
 
-    .sm--#{$i} {
+    .sm-#{$i} {
         @include sm {
-            width: 100% / $i !important;
+            width: percentage($i / 12);
         }
     }
 
-    .md--#{$i} {
+    .md-#{$i} {
         @include md {
-            width: 100% / $i !important;
+            width: percentage($i / 12);
         }
     }
 
-    .lg--#{$i} {
+    .lg-#{$i} {
         @include lg {
-            width: 100% / $i !important;
+            width: percentage($i / 12);
         }
     }
 
-    .xl--#{$i} {
+    .xl-#{$i} {
         @include xl {
-            width: 100% / $i !important;
+            width: percentage($i / 12);
         }
     }
 }
