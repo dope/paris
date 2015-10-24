@@ -33,6 +33,11 @@ $well-dark-padding:             25px;
         background: $well-light-color;
     }
 
+    &--outline {
+      background: transparent;
+      border: 1px solid $well-default-color;
+    }
+
     &--dark {
         background: $well-dark-color;
         > * {
