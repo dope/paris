@@ -13,6 +13,7 @@
 /* Main Variables */
 
 /* Usage: <div class="msg">Hello World</div> */
+.message, // optional class
 .msg {
     margin-top: $half-spacing-unit;
     margin-bottom: $half-spacing-unit;
