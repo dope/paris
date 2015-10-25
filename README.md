@@ -4,13 +4,16 @@ Paris is a CSS framework made to easily style web applications, backend systems 
 
 
 ### Getting Started
-Firstly you're going to want to download Paris — You can achieve this by one of the three options below:
-- `bower install paris`
+Firstly you're going to want to download Paris — You can achieve this by one of the two options below:
 - `git clone http://github.com/dope/paris`
 - [Download .zip](https://github.com/dope/paris/archive/master.zip)
 
 Next you need to build your assets by running
-```npm install && bower install && gulp```
+```npm install```
+
+and then
+
+```gulp```
 
 
 For the main documentation please visit: [pariscss.com](http://pariscss.com)
