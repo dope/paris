@@ -9,12 +9,16 @@ Firstly you're going to want to download Paris — You can achieve this by one o
 - [Download .zip](https://github.com/dope/paris/archive/master.zip)
 
 Next you need to build your assets by running
-```npm install```
 
-and then
+```bash
+npm install
+```
 
-```gulp```
+and then 
 
+```bash
+gulp
+```
 
 For the main documentation please visit: [pariscss.com](http://pariscss.com)
 
