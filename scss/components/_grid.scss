@@ -37,38 +37,38 @@ $grid-end:     12;
 }
 
 .grid__col {
-    width: auto;
+     width: auto;
 }
 
 
 @for $i from $grid-start through $grid-end {
     .xs-#{$i} {
         @include xs{
-            width: percentage($i / 12);
+            width: percentage($i / 12) !important;
         }
     }
 
     .sm-#{$i} {
         @include sm {
-            width: percentage($i / 12);
+            width: percentage($i / 12) !important;
         }
     }
 
     .md-#{$i} {
         @include md {
-            width: percentage($i / 12);
+            width: percentage($i / 12) !important;
         }
     }
 
     .lg-#{$i} {
         @include lg {
-            width: percentage($i / 12);
+            width: percentage($i / 12) !important;
         }
     }
 
     .xl-#{$i} {
         @include xl {
-            width: percentage($i / 12);
+            width: percentage($i / 12) !important;
         }
     }
 }

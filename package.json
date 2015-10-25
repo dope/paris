@@ -9,7 +9,7 @@
     "gulp-autoprefixer": "*",
     "gulp-concat": "*",
     "gulp-jshint": "*",
-    "gulp-plumber": "*",
+    "gulp-notify": "^2.2.0",
     "gulp-sass": "*",
     "gulp-uglify": "*",
     "jshint-stylish": "*"
