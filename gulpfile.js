@@ -38,8 +38,11 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest('js/min/'));
 });
 
-// default task (just run gulp)
-gulp.task('default', ['sass', 'browser-sync', 'scripts'], function () {
+// build assets and start browser-sync server
+gulp.task('watch', ['sass', 'browser-sync', 'scripts'], function () {
   gulp.watch('scss/**/*.scss', ['sass']);
   gulp.watch('js/*.js', ['scripts']);
 });
+
+// default task (build assets)
+gulp.task('default', ['sass', 'scripts']);
