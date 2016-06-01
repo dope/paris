@@ -1,3 +1,15 @@
+/*
+*
+* Paris v0.5
+* Created by @joericho
+*
+* Licensed under MIT
+* -------------------
+* Buttons
+* -------------------
+*
+*/
+
 // Usage: @include opacity(0.8);
 @mixin opacity($opacity) {
     opacity: $opacity;

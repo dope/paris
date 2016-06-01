@@ -1,6 +1,6 @@
 /*
 *
-* Paris v0.1
+* Paris v0.5
 * Created by @joericho
 *
 * Licensed under MIT
@@ -9,8 +9,6 @@
 * -------------------
 *
 */
-
-/* Main Variables */
 
 /* Inputs */
 $input-bg:                      $color-white;
@@ -52,6 +50,10 @@ $label-font-weight:             500;
     /* Usage: <div class="form__group"></div> */
     &__group {
         margin-top: $half-spacing-unit;
+    }
+
+    &__label {
+        margin-bottom: $quarter-spacing-unit;
     }
 
     /* Usage: <input type="text" class="form__input"> */

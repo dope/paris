@@ -1,6 +1,6 @@
 /*
 *
-* Paris v0.1
+* Paris v0.5
 * Created by @joericho
 *
 * Licensed under MIT
@@ -10,7 +10,6 @@
 *
 */
 
-/* Main Variables */
 $grid-gutter:  $base-spacing-unit;
 $grid-start:   1;
 $grid-end:     12;
@@ -24,36 +23,38 @@ $grid-end:     12;
     &__col {
         float: left;
         padding-left: $grid-gutter;
+        width: 100%;
+        min-height: 1px;
     }
 }
 
 @for $i from $grid-start through $grid-end {
     .xs-#{$i} {
-        @include xs {
+        @include media-query(xs) {
             width: percentage($i / $grid-end) !important;
         }
     }
 
     .sm-#{$i} {
-        @include sm {
+        @include media-query(sm) {
             width: percentage($i / $grid-end) !important;
         }
     }
 
     .md-#{$i} {
-        @include md {
+        @include media-query(md) {
             width: percentage($i / $grid-end) !important;
         }
     }
 
     .lg-#{$i} {
-        @include lg {
+        @include media-query(lg) {
             width: percentage($i / $grid-end) !important;
         }
     }
 
     .xl-#{$i} {
-        @include xl {
+        @include media-query(xl) {
             width: percentage($i / $grid-end) !important;
         }
     }

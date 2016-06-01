@@ -21,7 +21,7 @@ gulp.task('sass', function() {
 
 // create browser sync task
 gulp.task('browser-sync', function() {
-  browserSync.init(['css/*.css', 'js/**/*.js', 'index.html'], {
+  browserSync.init(['css/*.css', 'js/**/*.js', '*.html'], {
     server: {
       baseDir: './'
     }

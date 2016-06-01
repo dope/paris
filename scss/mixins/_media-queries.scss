@@ -1,44 +1,40 @@
-// Media Queries
-
-/* Main Variables */
-
-$xs:        30em;
+$xs:        20em;
 $sm:        40em;
 $md:        50em;
 $lg:        64em;
 $xl:        $lg + 1;
 
-// Usage: @include xs { // content }
-@mixin xs {
+$xs:          30em;
+$sm:          40em;
+$md:          50em;
+$lg:          64em;
+$xl:          $lg + 1;
+
+// Breakpoints
+@mixin media-query($type) {
+  @if $type == xs {
     @media screen and (max-width: $sm) {
-        @content;
+      @content;
     }
-}
-
-// Usage: @include sm { // content }
-@mixin sm {
+  }
+  @else if $type == sm {
     @media (min-width: $sm) and (max-width: $md) {
-        @content;
+      @content;
     }
-}
-
-// Usage: @include md { // content }
-@mixin md {
+  }
+  @else if $type == md {
     @media (min-width: $md) and (max-width: $lg) {
-        @content;
+      @content;
     }
-}
-
-// Usage: @include lg { // content }
-@mixin lg {
+  }
+  @else if $type == lg {
     @media (min-width: $lg) and (max-width: $xl) {
-        @content;
+      @content;
     }
-}
-
-// Usage: @include xl { // content }
-@mixin xl {
+  }
+  @else if $type == xl {
     @media (min-width: $xl) {
-        @content;
+      @content;
     }
+  }
 }
