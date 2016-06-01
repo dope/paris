@@ -1,6 +1,6 @@
 /*
 *
-* Paris v0.1
+* Paris v0.5
 * Created by @joericho
 *
 * Licensed under MIT
@@ -11,12 +11,12 @@
 */
 
 $nav-background: $color-blue;
-
-/* Fixed options */
 $nav-fixed-width: 100%;
 
 .nav {
     background: $nav-background;
+    font-size: 0;
+    padding: 5px 0;
 
     &--fixed {
         position: fixed;
@@ -30,9 +30,10 @@ $nav-fixed-width: 100%;
 
     &__logo {
         width: 20%;
-        float: left;
+        display: inline-block;
+        vertical-align: middle;
         margin: 0;
-        padding: 8px 0 0 20px;
+        padding: 0 20px;
         color: $color-white;
         font-size: 1.3rem;
 
@@ -41,22 +42,23 @@ $nav-fixed-width: 100%;
             text-decoration: none;
         }
 
-        @include sm {
+        @include media-query(sm) {
             padding: 15px 20px;
         }
 
-        @include xs {
+        @include media-query(xs) {
             padding: 15px 20px;
         }
     }
 
     &__wrapper {
         width: 80%;
-        float: right;
+        display: inline-block;
+        vertical-align: middle;
         text-align: right;
         transition: max-height 0.3s ease-in-out;
 
-        @include sm {
+        @include media-query(sm) {
             max-height: 0;
             overflow: hidden;
             width: 100%;
@@ -64,7 +66,7 @@ $nav-fixed-width: 100%;
             background: darken($nav-background, 5%);
         }
 
-        @include xs {
+        @include media-query(xs) {
             max-height: 0;
             overflow: hidden;
             width: 100%;
@@ -75,11 +77,11 @@ $nav-fixed-width: 100%;
         &--toggle {
             transition: max-height 0.3s ease-in-out;
 
-            @include sm {
+            @include media-query(sm) {
                 max-height: 500px;
             }
 
-            @include xs {
+            @include media-query(xs) {
                 max-height: 500px;
             }
         }
@@ -90,7 +92,8 @@ $nav-fixed-width: 100%;
         display: inline-block;
         vertical-align: middle;
         font-size: 0;
-        @include xs {
+
+        @include media-query(xs) {
             display: block;
         }
     }
@@ -100,7 +103,7 @@ $nav-fixed-width: 100%;
         font-size: $base-font-size;
         text-decoration: none;
         padding: 10px 20px;
-        color: lighten($nav-background, 25%);
+        color: lighten($nav-background, 50%);
         transition: color .3s ease;
 
         &--childs {
@@ -120,7 +123,7 @@ $nav-fixed-width: 100%;
     /* Trigger */
     &__trigger {
         position: absolute;
-        top: 17px;
+        top: 22px;
         right: 20px;
         width: 25px;
         height: 20px;
@@ -130,11 +133,11 @@ $nav-fixed-width: 100%;
         cursor: pointer;
         display: none;
 
-        @include sm {
+        @include media-query(sm) {
             display: block;
         }
 
-        @include xs {
+        @include media-query(xs) {
             display: block;
         }
     }
@@ -192,7 +195,7 @@ $nav-fixed-width: 100%;
         min-width: 200px;
         position: absolute;
         z-index: 1;
-        background: darken($nav-background, 5%);
+        background: $nav-background;
         left: 0;
         text-align: left;
         opacity: 0;
@@ -200,7 +203,7 @@ $nav-fixed-width: 100%;
         overflow: hidden;
         transition: all .3s ease-in-out .4s;
 
-        @include xs {
+        @include media-query(xs) {
             position: relative;
             background: darken($nav-background, 8%);
             text-align: center;
@@ -213,6 +216,12 @@ $nav-fixed-width: 100%;
 
         .nav__list {
             display: block;
+        }
+
+        .nav__link {
+            &:hover {
+                background: darken($nav-background, 4%);
+            }
         }
     }
 }

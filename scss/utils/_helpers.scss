@@ -1,6 +1,6 @@
 /*
 *
-* Paris v0.1
+* Paris v0.5
 * Created by @joericho
 *
 * Licensed under MIT
@@ -340,42 +340,135 @@
 =============================================*/
 // mobile show
 .mobile--show {
-    @include xs {
+    @include media-query(xs) {
         display: block;
     }
 }
 
 // mobile hide
 .mobile--hide {
-    @include xs {
+    @include media-query(xs) {
         display: none;
     }
 }
 
 // tablet show
 .tablet--show {
-    @include md {
+    @include media-query(md) {
         display: block;
     }
 }
 
 // tablet hide
 .tablet--hide {
-    @include md {
+    @include media-query(md) {
         display: none;
     }
 }
 
 // desktop show
 .desktop--show {
-    @include lg {
+    @include media-query(lg) {
         display: block;
     }
 }
 
 // desktop hide
 .desktop--hide {
-    @include lg {
+    @include media-query(lg) {
         display: none;
     }
+}
+
+/*=============================================
+=                   Colors                    =
+=============================================*/
+// Black
+.bg-black {
+    background: $color-black;
+}
+
+.color-black {
+    color: $color-black;
+}
+
+// White
+.bg-white {
+    background: $color-white;
+}
+
+.color-white {
+    color: $color-white;
+}
+
+// Grey
+.bg-grey {
+    background: $color-grey;
+}
+
+.color-grey {
+    color: $color-grey;
+}
+
+// Blue
+.bg-blue {
+    background: $color-blue;
+}
+
+.color-blue {
+    color: $color-blue;
+}
+
+// Green
+.bg-green {
+    background: $color-green;
+}
+
+.color-green {
+    color: $color-green;
+}
+
+// Red
+.bg-red {
+    background: $color-red;
+}
+
+.color-red {
+    color: $color-red;
+}
+
+// Orange
+.bg-orange {
+    background: $color-orange;
+}
+
+.color-orange {
+    color: $color-orange;
+}
+
+// Yellow
+.bg-yellow {
+    background: $color-yellow;
+}
+
+.color-yellow {
+    color: $color-yellow;
+}
+
+// Purple
+.bg-purple {
+    background: $color-purple;
+}
+
+.color-purple {
+    color: $color-purple;
+}
+
+// Accent
+.bg-accent {
+    background: $color-accent;
+}
+
+.color-accent {
+    color: $color-accent;
 }

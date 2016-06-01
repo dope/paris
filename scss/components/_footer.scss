@@ -1,6 +1,6 @@
 /*
 *
-* Paris v0.1
+* Paris v0.5
 * Created by @joericho
 *
 * Licensed under MIT
@@ -10,7 +10,6 @@
 *
 */
 
-/* Main variables */
 $footer-background: $color-blue;
 $footer-text-color: $color-white;
 $footer-padding: 2rem 0;
@@ -29,7 +28,7 @@ $footer-padding: 2rem 0;
 
     /* Set width for container */
     &__wrapper {
-        max-width: $grid-width;
+        max-width: $page-width;
         width: 90%;
         margin: 0 auto;
     }

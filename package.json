@@ -1,6 +1,6 @@
 {
   "name": "paris",
-  "version": "0.0.1",
+  "version": "0.5",
   "description": "Modern Framework",
   "main": "gulpfile.js",
   "devDependencies": {

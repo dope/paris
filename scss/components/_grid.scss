@@ -1,6 +1,6 @@
 /*
 *
-* Paris v0.1
+* Paris v0.5
 * Created by @joericho
 *
 * Licensed under MIT
@@ -10,9 +10,7 @@
 *
 */
 
-/* Main Variables */
-$grid-width:   1200px;
-$grid-gutter:  $quarter-spacing-unit;
+$grid-gutter:  $base-spacing-unit;
 $grid-start:   1;
 $grid-end:     12;
 
@@ -20,55 +18,44 @@ $grid-end:     12;
 /* Lets keep sh*t simple. */
 .grid {
     @extend %clearfix;
-    max-width: $grid-width;
-    margin: 0 auto;
-
-    /* Grid columns with no padding */
-    &--flush {
-        .grid__col {
-            padding: 0 !important;
-        }
-    }
+    margin-left: -$grid-gutter;
 
     &__col {
         float: left;
-        padding: $grid-gutter;
+        padding-left: $grid-gutter;
+        width: 100%;
+        min-height: 1px;
     }
 }
 
-.grid__col {
-     width: auto;
-}
-
-
 @for $i from $grid-start through $grid-end {
     .xs-#{$i} {
-        @include xs{
-            width: percentage($i / 12) !important;
+        @include media-query(xs) {
+            width: percentage($i / $grid-end) !important;
         }
     }
 
     .sm-#{$i} {
-        @include sm {
-            width: percentage($i / 12) !important;
+        @include media-query(sm) {
+            width: percentage($i / $grid-end) !important;
         }
     }
 
     .md-#{$i} {
-        @include md {
-            width: percentage($i / 12) !important;
+        @include media-query(md) {
+            width: percentage($i / $grid-end) !important;
         }
     }
 
     .lg-#{$i} {
-        @include lg {
-            width: percentage($i / 12) !important;
+        @include media-query(lg) {
+            width: percentage($i / $grid-end) !important;
         }
     }
 
     .xl-#{$i} {
-        @include xl {
-            width: percentage($i / 12) !important;
+        @include media-query(xl) {
+            width: percentage($i / $grid-end) !important;
         }
     }
 }

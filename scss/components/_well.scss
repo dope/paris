@@ -1,6 +1,6 @@
 /*
 *
-* Paris v0.1
+* Paris v0.5
 * Created by @joericho
 *
 * Licensed under MIT
@@ -10,24 +10,23 @@
 *
 */
 
-/* Main Variables */
-
 /* Colors */
 $well-default-color:            $color-grey--light;
 $well-light-color:              $color-white;
 $well-dark-color:               $color-grey--dark;
 
 /* Styles */
-$well-default-padding:          25px;
-$well-light-padding:            25px;
-$well-dark-padding:             25px;
+$well-default-padding:          $base-spacing-unit;
 
 /* Usage: <div class="well">Content here</div> */
 .well {
     background: $well-default-color;
     padding: $well-default-padding;
-    @include border-radius(5px);
     margin: $base-spacing-unit auto;
+
+    &--rounded {
+        @include border-radius(5px);
+    }
 
     &--light {
         background: $well-light-color;
@@ -45,4 +44,3 @@ $well-dark-padding:             25px;
       }
   }
 }
-

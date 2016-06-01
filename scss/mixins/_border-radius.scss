@@ -1,5 +1,16 @@
-// Usage: @include border-radius(5px);
+/*
+*
+* Paris v0.5
+* Created by @joericho
+*
+* Licensed under MIT
+* -------------------
+* Buttons
+* -------------------
+*
+*/
 
+// Usage: @include border-radius(5px);
 @mixin border-radius($radius) {
     border-radius: $radius;
     background-clip: padding-box;

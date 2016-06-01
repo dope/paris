@@ -1,6 +1,6 @@
 /*
 *
-* Paris v0.1
+* Paris v0.5
 * Created by @joericho
 *
 * Licensed under MIT
@@ -10,8 +10,6 @@
 *
 */
 
-/* Main Variables */
-
 /* Black */
 $color-black:                   black;
 
@@ -20,7 +18,7 @@ $color-white:                   white;
 
 /* Grey */
 $color-grey:                    #696969;
-$color-grey--light:             #e9e9e9;
+$color-grey--light:             #f4f4f4;
 $color-grey--dark:              #413d3d;
 
 /* Blue */
@@ -61,93 +59,3 @@ $color-warning:                 #f4d03f;
 
 /* Brand Color */
 $color-accent:                  $color-blue;
-
-/* Black */
-.bg-black {
-    background: $color-black;
-}
-
-.color-black {
-    color: $color-black;
-}
-
-/* White */
-.bg-white {
-    background: $color-white;
-}
-
-.color-white {
-    color: $color-white;
-}
-
-/* Grey */
-.bg-grey {
-    background: $color-grey;
-}
-
-.color-grey {
-    color: $color-grey;
-}
-
-/* Blue */
-.bg-blue {
-    background: $color-blue;
-}
-
-.color-blue {
-    color: $color-blue;
-}
-
-/* Green */
-.bg-green {
-    background: $color-green;
-}
-
-.color-green {
-    color: $color-green;
-}
-
-/* Red */
-.bg-red {
-    background: $color-red;
-}
-
-.color-red {
-    color: $color-red;
-}
-
-/* Orange */
-.bg-orange {
-    background: $color-orange;
-}
-
-.color-orange {
-    color: $color-orange;
-}
-
-/* Yellow */
-.bg-yellow {
-    background: $color-yellow;
-}
-
-.color-yellow {
-    color: $color-yellow;
-}
-
-/* Purple */
-.bg-purple {
-    background: $color-purple;
-}
-
-.color-purple {
-    color: $color-purple;
-}
-
-/* Accent */
-.bg-accent {
-    background: $color-accent;
-}
-
-.color-accent {
-    color: $color-accent;
-}
